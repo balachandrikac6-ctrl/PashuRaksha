@@ -5,6 +5,8 @@ backend/__pycache__/
 
 # Database
 backend/*.db
+pashuraksha.db
+*.db
 
 # Node
 frontend/node_modules/
