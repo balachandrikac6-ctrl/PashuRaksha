@@ -57,7 +57,7 @@ def get_connection():
     return conn
 
 
-def init_db():
+def init_db(seed_demo=False):
 
     conn = get_connection()
     cursor = conn.cursor()
@@ -135,7 +135,8 @@ def init_db():
 
     conn.commit()
 
-    seed_demo_data(conn)
+    if seed_demo:
+        seed_demo_data(conn)
 
     conn.close()
 
