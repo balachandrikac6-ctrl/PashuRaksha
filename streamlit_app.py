@@ -49,6 +49,40 @@ SYMPTOMS = [
     "ticks", "dehydration", "discharge",
 ]
 
+CARE_GROUP_BY_ANIMAL = {
+    "Cow": "ruminant", "Buffalo": "ruminant", "Goat": "ruminant", "Sheep": "ruminant", "Camel": "ruminant",
+    "Chicken": "poultry", "Duck": "poultry", "Turkey": "poultry", "Pigeon": "poultry",
+    "Pig": "swine", "Dog": "companion", "Cat": "companion", "Horse": "equine", "Donkey": "equine", "Rabbit": "rabbit",
+}
+
+CARE_TOPICS_BY_GROUP = {
+    "ruminant": ["general", "digestive", "respiratory", "skin", "injury", "bloat", "udder", "reproductive", "neurological", "toxin"],
+    "poultry": ["general", "digestive", "respiratory", "skin", "injury", "flock", "egg", "neurological", "toxin"],
+    "swine": ["general", "digestive", "respiratory", "skin", "injury", "bloat", "reproductive", "neurological", "toxin"],
+    "companion": ["general", "digestive", "respiratory", "skin", "injury", "urinary", "reproductive", "neurological", "toxin"],
+    "equine": ["general", "digestive", "respiratory", "skin", "injury", "colic", "reproductive", "neurological", "toxin"],
+    "rabbit": ["general", "digestive", "respiratory", "skin", "injury", "rabbit_gi", "dental", "neurological", "toxin"],
+}
+
+CARE_TOPIC_TITLE_KEYS = {
+    "general": "general_warning", "digestive": "digestive_warning", "respiratory": "respiratory_warning",
+    "skin": "skin_warning", "injury": "injury_warning", "bloat": "care_bloat_title", "udder": "milk_warning",
+    "reproductive": "care_reproductive_title", "neurological": "neurological_warning", "toxin": "care_toxin_title",
+    "flock": "care_flock_title", "egg": "care_egg_title", "urinary": "care_urinary_title", "colic": "care_colic_title",
+    "rabbit_gi": "care_rabbit_gi_title", "dental": "care_dental_title",
+}
+
+CARE_TOPIC_SYMPTOMS = {
+    "general": ["fever", "not_eating", "weakness"], "digestive": ["diarrhea", "vomiting", "dehydration"],
+    "respiratory": ["cough", "difficulty_breathing", "nasal_discharge"], "skin": ["itching", "ticks", "skin_lesions"],
+    "injury": ["wounds", "swelling", "lameness"], "bloat": ["abdominal_swelling", "bloating"],
+    "udder": ["milk_drop", "abnormal_milk"], "reproductive": ["reproductive_problem", "discharge"],
+    "neurological": ["tremors", "seizures"], "toxin": ["vomiting", "tremors", "seizures"],
+    "flock": ["cough", "difficulty_breathing", "diarrhea", "weakness"], "egg": ["reduced_eating", "weakness", "discharge"],
+    "urinary": ["frequent_urination", "high_thirst", "discharge"], "colic": ["abdominal_swelling", "bloating", "constipation"],
+    "rabbit_gi": ["not_eating", "reduced_eating", "abdominal_swelling"], "dental": ["not_eating", "reduced_eating", "weight_loss"],
+}
+
 LANGUAGE_CODES = {
     "English": "en-IN",
     "Hindi": "hi-IN",
@@ -623,6 +657,107 @@ TRANSLATION_EXTRAS = {
     },
 }
 for language_name, translations in TRANSLATION_EXTRAS.items():
+    TRANSLATIONS[language_name].update(translations)
+
+ANIMAL_CARE_TRANSLATIONS = {
+    "English": {
+        "care_guide_title": "Animal Care and Disease Guide", "care_choose_animal": "Choose an animal", "care_choose_topic": "Choose a health concern",
+        "care_supportive_label": "Safe supportive care", "care_urgent_label": "Get veterinary help urgently if", "care_species_note": "Species-specific warning",
+        "care_scope_note": "This guide covers common warning patterns, not every disease. Similar signs can have different causes; a veterinarian must diagnose and prescribe treatment.",
+        "care_no_treatment": "Do not give human or leftover medicines, force food or water, or apply chemicals/remedies unless a veterinarian directs you.",
+        "care_urgent_signs": "Trouble breathing, collapse, seizures, uncontrolled bleeding, severe swelling, inability to urinate, rapid worsening, or several animals becoming ill suddenly needs urgent veterinary attention.",
+        "care_bloat_title": "Bloat or abdominal swelling", "care_reproductive_title": "Reproductive or birth problem", "care_toxin_title": "Possible poisoning or toxin exposure",
+        "care_flock_title": "Flock illness or sudden deaths", "care_egg_title": "Egg production or laying change", "care_urinary_title": "Urinary or reproductive change",
+        "care_colic_title": "Colic or severe abdominal pain", "care_rabbit_gi_title": "Reduced eating or droppings (gut slowdown)", "care_dental_title": "Dental or chewing problem",
+        "care_group_ruminant": "In cattle, buffalo, goats, sheep and camels, sudden abdominal swelling, inability to stand, mouth sores with drooling/lameness, or several sick animals needs prompt veterinary assessment. Do not puncture a swollen abdomen or move sick animals between herds.",
+        "care_group_poultry": "For chickens, ducks, turkeys and pigeons, isolate visibly sick birds if safe, use separate feed/water equipment, and contact a veterinarian promptly for several affected birds or any sudden deaths. Avoid moving birds between flocks.",
+        "care_group_swine": "For pigs, fever with coughing/diarrhea, unusual skin discoloration, several sick animals or sudden deaths needs urgent veterinary/animal-health advice. Restrict movement of pigs and equipment until advised.",
+        "care_group_companion": "For dogs and cats, suspected toxin exposure, collapse, repeated vomiting, breathing trouble, or inability to pass urine is urgent. Do not induce vomiting or give human medicines unless a veterinarian instructs you.",
+        "care_group_equine": "For horses and donkeys, pawing, repeated rolling, looking at the flank, sweating or passing little/no manure can indicate colic and is an emergency. Call a veterinarian; do not give medicines or force exercise.",
+        "care_group_rabbit": "For rabbits, not eating or reduced/no droppings can become an emergency quickly. Contact a veterinarian promptly; keep the rabbit calm with hay and water available, and do not force-feed unless instructed.",
+    },
+    "Hindi": {
+        "care_guide_title": "पशु देखभाल और रोग मार्गदर्शिका", "care_choose_animal": "पशु चुनें", "care_choose_topic": "स्वास्थ्य समस्या चुनें",
+        "care_supportive_label": "सुरक्षित सहायक देखभाल", "care_urgent_label": "इन स्थितियों में तुरंत पशु चिकित्सक से संपर्क करें", "care_species_note": "इस प्रजाति के लिए विशेष चेतावनी",
+        "care_scope_note": "यह मार्गदर्शिका सामान्य चेतावनी संकेतों को बताती है, हर रोग को नहीं। एक जैसे लक्षणों के अलग कारण हो सकते हैं; निदान और उपचार पशु चिकित्सक ही करें।",
+        "care_no_treatment": "पशु चिकित्सक के निर्देश के बिना इंसानी या बची हुई दवा न दें, जबरन खाना-पानी न दें और घरेलू रसायन/नुस्खे न लगाएँ।",
+        "care_urgent_signs": "साँस लेने में कठिनाई, बेहोशी/गिरना, दौरे, न रुकने वाला खून, तेज सूजन, पेशाब न कर पाना, तेजी से बिगड़ना या कई पशुओं का अचानक बीमार होना तुरंत पशु चिकित्सा सहायता माँगता है।",
+        "care_bloat_title": "पेट फूलना या पेट में सूजन", "care_reproductive_title": "प्रजनन या प्रसव की समस्या", "care_toxin_title": "ज़हर या विषैले पदार्थ का संदेह",
+        "care_flock_title": "झुंड में बीमारी या अचानक मृत्यु", "care_egg_title": "अंडे देने या उत्पादन में बदलाव", "care_urinary_title": "मूत्र या प्रजनन में बदलाव",
+        "care_colic_title": "पेट का तेज दर्द या कोलिक", "care_rabbit_gi_title": "कम खाना या मल कम होना (आँतों की गति धीमी)", "care_dental_title": "दाँत या चबाने की समस्या",
+        "care_group_ruminant": "गाय, भैंस, बकरी, भेड़ और ऊँट में अचानक पेट फूलना, खड़ा न हो पाना, लार के साथ मुँह के घाव/लंगड़ापन या कई पशुओं का बीमार होना जल्दी पशु चिकित्सक को दिखाएँ। सूजे पेट में छेद न करें और बीमार पशुओं को झुंडों के बीच न ले जाएँ।",
+        "care_group_poultry": "मुर्गी, बतख, टर्की और कबूतर में बीमार पक्षी को सुरक्षित हो तो अलग रखें, पानी/चारे के बर्तन अलग रखें और कई पक्षियों के बीमार होने या अचानक मृत्यु पर पशु चिकित्सक से तुरंत संपर्क करें। पक्षियों को झुंडों के बीच न ले जाएँ।",
+        "care_group_swine": "सूअरों में बुखार के साथ खाँसी/दस्त, त्वचा का असामान्य रंग, कई पशुओं का बीमार होना या अचानक मृत्यु होने पर तुरंत पशु चिकित्सक/पशु-स्वास्थ्य सेवा से सलाह लें। सलाह मिलने तक पशु और उपकरणों की आवाजाही रोकें।",
+        "care_group_companion": "कुत्ते और बिल्ली में ज़हर का संदेह, गिरना, बार-बार उल्टी, साँस की तकलीफ़ या पेशाब न कर पाना आपात स्थिति है। पशु चिकित्सक के निर्देश के बिना उल्टी न कराएँ और इंसानी दवा न दें।",
+        "care_group_equine": "घोड़े और गधे में पैर पटकना, बार-बार लोटना, पेट की ओर देखना, पसीना या मल न निकलना कोलिक का संकेत हो सकता है और आपात स्थिति है। पशु चिकित्सक को बुलाएँ; दवा न दें और जबरन व्यायाम न कराएँ।",
+        "care_group_rabbit": "खरगोश का खाना बंद करना या मल कम/बंद होना जल्दी आपात स्थिति बन सकता है। जल्द पशु चिकित्सक से संपर्क करें; खरगोश को शांत रखें और घास-पानी उपलब्ध रखें। निर्देश के बिना जबरन खाना न खिलाएँ।",
+    },
+    "Kannada": {
+        "care_guide_title": "ಪಶು ಆರೈಕೆ ಮತ್ತು ರೋಗ ಮಾರ್ಗದರ್ಶಿ", "care_choose_animal": "ಪಶುವನ್ನು ಆಯ್ಕೆಮಾಡಿ", "care_choose_topic": "ಆರೋಗ್ಯ ಸಮಸ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "care_supportive_label": "ಸುರಕ್ಷಿತ ಸಹಾಯಕ ಆರೈಕೆ", "care_urgent_label": "ಈ ಲಕ್ಷಣಗಳಿದ್ದರೆ ತಕ್ಷಣ ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ", "care_species_note": "ಈ ಪ್ರಾಣಿಗೆ ವಿಶೇಷ ಎಚ್ಚರಿಕೆ",
+        "care_scope_note": "ಈ ಮಾರ್ಗದರ್ಶಿ ಸಾಮಾನ್ಯ ಎಚ್ಚರಿಕೆ ಲಕ್ಷಣಗಳನ್ನು ಒಳಗೊಂಡಿದೆ, ಪ್ರತಿಯೊಂದು ರೋಗವನ್ನಲ್ಲ. ಒಂದೇ ಲಕ್ಷಣಕ್ಕೆ ಬೇರೆ ಕಾರಣಗಳಿರಬಹುದು; ರೋಗನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸೆ ಪಶುವೈದ್ಯರಿಂದಲೇ ಆಗಬೇಕು.",
+        "care_no_treatment": "ಪಶುವೈದ್ಯರ ಸೂಚನೆಯಿಲ್ಲದೆ ಮಾನವರ ಅಥವಾ ಉಳಿದ ಔಷಧಿ ನೀಡಬೇಡಿ, ಬಲವಂತವಾಗಿ ಆಹಾರ/ನೀರು ಕೊಡಬೇಡಿ ಅಥವಾ ರಾಸಾಯನಿಕ/ಮನೆಮದ್ದನ್ನು ಹಚ್ಚಬೇಡಿ.",
+        "care_urgent_signs": "ಉಸಿರಾಟದ ತೊಂದರೆ, ಕುಸಿದು ಬೀಳುವುದು, ಸೆಳೆತ, ನಿಲ್ಲದ ರಕ್ತಸ್ರಾವ, ತೀವ್ರ ಊತ, ಮೂತ್ರ ವಿಸರ್ಜನೆ ಆಗದಿರುವುದು, ವೇಗವಾಗಿ ಹದಗೆಡುವುದು ಅಥವಾ ಹಲವು ಪಶುಗಳು ಒಟ್ಟಿಗೆ ಅಸ್ವಸ್ಥವಾಗುವುದು ತುರ್ತು ಪಶುವೈದ್ಯಕೀಯ ನೆರವನ್ನು ಅಗತ್ಯಪಡಿಸುತ್ತದೆ.",
+        "care_bloat_title": "ಹೊಟ್ಟೆ ಉಬ್ಬರ ಅಥವಾ ಊತ", "care_reproductive_title": "ಸಂತಾನೋತ್ಪತ್ತಿ ಅಥವಾ ಹೆರಿಗೆ ಸಮಸ್ಯೆ", "care_toxin_title": "ವಿಷ ಅಥವಾ ವಿಷಕಾರಿ ವಸ್ತುವಿನ ಶಂಕೆ",
+        "care_flock_title": "ಹಿಂಡಿನ ಕಾಯಿಲೆ ಅಥವಾ ಹಠಾತ್ ಸಾವುಗಳು", "care_egg_title": "ಮೊಟ್ಟೆ ಉತ್ಪಾದನೆ ಅಥವಾ ಇಡುವಿಕೆಯಲ್ಲಿ ಬದಲಾವಣೆ", "care_urinary_title": "ಮೂತ್ರ ಅಥವಾ ಸಂತಾನೋತ್ಪತ್ತಿಯಲ್ಲಿ ಬದಲಾವಣೆ",
+        "care_colic_title": "ತೀವ್ರ ಹೊಟ್ಟೆ ನೋವು (ಕಾಲಿಕ್)", "care_rabbit_gi_title": "ಕಡಿಮೆ ತಿನ್ನುವುದು ಅಥವಾ ಮಲ ಕಡಿಮೆಯಾಗುವುದು", "care_dental_title": "ಹಲ್ಲು ಅಥವಾ ಜಗಿಯುವ ಸಮಸ್ಯೆ",
+        "care_group_ruminant": "ಹಸು, ಎಮ್ಮೆ, ಮೇಕೆ, ಕುರಿ ಮತ್ತು ಒಂಟೆಯಲ್ಲಿ ಹಠಾತ್ ಹೊಟ್ಟೆ ಉಬ್ಬರ, ನಿಲ್ಲಲಾಗದಿರುವುದು, ಬಾಯಿಯ ಗಾಯಗಳ ಜೊತೆಗೆ ಲಾಲಾರಸ/ಕುಂಟು ಅಥವಾ ಹಲವು ಪಶುಗಳು ಅಸ್ವಸ್ಥವಾಗುವುದು ಕಂಡರೆ ತಕ್ಷಣ ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ. ಊದಿದ ಹೊಟ್ಟೆಗೆ ರಂಧ್ರ ಮಾಡಬೇಡಿ; ಅಸ್ವಸ್ಥ ಪಶುಗಳನ್ನು ಹಿಂಡುಗಳ ನಡುವೆ ಸಾಗಿಸಬೇಡಿ.",
+        "care_group_poultry": "ಕೋಳಿ, ಬಾತುಕೋಳಿ, ಟರ್ಕಿ ಮತ್ತು ಪಾರಿವಾಳದಲ್ಲಿ ಅಸ್ವಸ್ಥ ಪಕ್ಷಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಸಾಧ್ಯವಾದರೆ ಪ್ರತ್ಯೇಕಿಸಿ, ಆಹಾರ/ನೀರಿನ ಪಾತ್ರೆಗಳನ್ನು ಬೇರ್ಪಡಿಸಿ. ಹಲವು ಪಕ್ಷಿಗಳು ಅಸ್ವಸ್ಥವಾದರೆ ಅಥವಾ ಹಠಾತ್ ಸಾವುಗಳಿದ್ದರೆ ತಕ್ಷಣ ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ. ಪಕ್ಷಿಗಳನ್ನು ಹಿಂಡುಗಳ ನಡುವೆ ಸಾಗಿಸಬೇಡಿ.",
+        "care_group_swine": "ಹಂದಿಗಳಲ್ಲಿ ಜ್ವರದೊಂದಿಗೆ ಕೆಮ್ಮು/ಅತಿಸಾರ, ಚರ್ಮದ ಅಸಹಜ ಬಣ್ಣ, ಹಲವು ಹಂದಿಗಳು ಅಸ್ವಸ್ಥವಾಗುವುದು ಅಥವಾ ಹಠಾತ್ ಸಾವು ಕಂಡರೆ ತಕ್ಷಣ ಪಶುವೈದ್ಯ/ಪಶು ಆರೋಗ್ಯ ಸೇವೆಯನ್ನು ಸಂಪರ್ಕಿಸಿ. ಸಲಹೆ ಸಿಗುವವರೆಗೆ ಹಂದಿ ಮತ್ತು ಉಪಕರಣಗಳ ಚಲನವಲನವನ್ನು ನಿಲ್ಲಿಸಿ.",
+        "care_group_companion": "ನಾಯಿ ಮತ್ತು ಬೆಕ್ಕಿನಲ್ಲಿ ವಿಷದ ಶಂಕೆ, ಕುಸಿತ, ಮರುಮರು ವಾಂತಿ, ಉಸಿರಾಟದ ತೊಂದರೆ ಅಥವಾ ಮೂತ್ರ ವಿಸರ್ಜನೆ ಆಗದಿರುವುದು ತುರ್ತು. ಪಶುವೈದ್ಯರ ಸೂಚನೆಯಿಲ್ಲದೆ ವಾಂತಿ ಮಾಡಿಸಬೇಡಿ ಅಥವಾ ಮಾನವರ ಔಷಧಿ ನೀಡಬೇಡಿ.",
+        "care_group_equine": "ಕುದುರೆ ಮತ್ತು ಕತ್ತೆಯಲ್ಲಿ ಕಾಲಿನಿಂದ ನೆಲ ಕೆರೆಯುವುದು, ಮರುಮರು ಉರುಳುವುದು, ಹೊಟ್ಟೆಯ ಕಡೆ ನೋಡುವುದು, ಬೆವರುವುದು ಅಥವಾ ಮಲ ಬರದಿರುವುದು ಕಾಲಿಕ್ ಸೂಚನೆಯಾಗಿರಬಹುದು; ಇದು ತುರ್ತು. ಪಶುವೈದ್ಯರನ್ನು ಕರೆಸಿ; ಔಷಧಿ ಕೊಡಬೇಡಿ ಅಥವಾ ಬಲವಂತವಾಗಿ ವ್ಯಾಯಾಮ ಮಾಡಿಸಬೇಡಿ.",
+        "care_group_rabbit": "ಮೊಲ ತಿನ್ನದಿರುವುದು ಅಥವಾ ಮಲ ಕಡಿಮೆಯಾಗುವುದು/ನಿಲ್ಲುವುದು ಬೇಗ ತುರ್ತು ಸ್ಥಿತಿಯಾಗಬಹುದು. ತಕ್ಷಣ ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ; ಮೊಲವನ್ನು ಶಾಂತವಾಗಿಟ್ಟು ಹುಲ್ಲು ಮತ್ತು ನೀರು ಲಭ್ಯವಿರಲಿ. ಸೂಚನೆಯಿಲ್ಲದೆ ಬಲವಂತವಾಗಿ ಆಹಾರ ಕೊಡಬೇಡಿ.",
+    },
+    "Marathi": {
+        "care_guide_title": "पशु काळजी आणि रोग मार्गदर्शक", "care_choose_animal": "प्राणी निवडा", "care_choose_topic": "आरोग्य समस्या निवडा",
+        "care_supportive_label": "सुरक्षित सहाय्यक काळजी", "care_urgent_label": "ही लक्षणे असल्यास तातडीने पशुवैद्याशी संपर्क करा", "care_species_note": "या प्राण्यासाठी विशेष सूचना",
+        "care_scope_note": "या मार्गदर्शकात सामान्य धोक्याची लक्षणे आहेत, प्रत्येक रोग नाही. समान लक्षणांची कारणे वेगवेगळी असू शकतात; निदान व उपचार पशुवैद्यानेच करावेत.",
+        "care_no_treatment": "पशुवैद्याच्या सूचनेशिवाय मानवी किंवा उरलेली औषधे देऊ नका, जबरदस्तीने खाऊ-पिऊ घालू नका किंवा रसायने/घरगुती उपाय लावू नका.",
+        "care_urgent_signs": "श्वास घेण्यास त्रास, कोसळणे, झटके, न थांबणारा रक्तस्राव, तीव्र सूज, लघवी न होणे, वेगाने बिघडणारी स्थिती किंवा अनेक पशू अचानक आजारी पडणे यासाठी तातडीची पशुवैद्यकीय मदत घ्या.",
+        "care_bloat_title": "पोट फुगणे किंवा सूज", "care_reproductive_title": "प्रजनन किंवा प्रसूतीची समस्या", "care_toxin_title": "विष किंवा विषारी पदार्थाचा संशय",
+        "care_flock_title": "कळपातील आजार किंवा अचानक मृत्यू", "care_egg_title": "अंडी देणे किंवा उत्पादनातील बदल", "care_urinary_title": "लघवी किंवा प्रजननातील बदल",
+        "care_colic_title": "पोटदुखी किंवा कॉलिक", "care_rabbit_gi_title": "कमी खाणे किंवा विष्ठा कमी होणे", "care_dental_title": "दात किंवा चावण्याची समस्या",
+        "care_group_ruminant": "गाय, म्हैस, शेळी, मेंढी आणि उंटात अचानक पोट फुगणे, उभे राहता न येणे, तोंडातील जखमांसह लाळ/लंगडणे किंवा अनेक पशू आजारी पडणे दिसल्यास तातडीने पशुवैद्याशी संपर्क करा. फुगलेल्या पोटाला छिद्र पाडू नका; आजारी पशूंना कळपांमध्ये हलवू नका.",
+        "care_group_poultry": "कोंबडी, बदक, टर्की आणि कबूतरांमध्ये शक्य असल्यास आजारी पक्षी वेगळे ठेवा, खाद्य/पाण्याची भांडी वेगळी वापरा. अनेक पक्षी आजारी पडल्यास किंवा अचानक मृत्यू झाल्यास तातडीने पशुवैद्याशी संपर्क करा. पक्ष्यांना कळपांमध्ये हलवू नका.",
+        "care_group_swine": "डुकरांना तापासह खोकला/जुलाब, त्वचेचा असामान्य रंग, अनेक डुकरे आजारी पडणे किंवा अचानक मृत्यू झाल्यास तातडीने पशुवैद्य/पशु-आरोग्य सेवेशी संपर्क करा. सल्ला मिळेपर्यंत डुकरे व उपकरणांची हालचाल थांबवा.",
+        "care_group_companion": "कुत्रा किंवा मांजरीत विषबाधेचा संशय, कोसळणे, वारंवार उलटी, श्वास घेण्यास त्रास किंवा लघवी न होणे ही तातडीची स्थिती आहे. पशुवैद्याच्या सूचनेशिवाय उलटी करवू नका किंवा मानवी औषधे देऊ नका.",
+        "care_group_equine": "घोडा किंवा गाढव वारंवार पाय आपटत असेल/लोळत असेल, पोटाकडे पाहत असेल, घाम येत असेल किंवा शेण होत नसेल तर कॉलिक असू शकतो; ही आपत्कालीन स्थिती आहे. पशुवैद्याला बोलवा; औषध देऊ नका किंवा जबरदस्तीने व्यायाम करवू नका.",
+        "care_group_rabbit": "ससा खाणे बंद करणे किंवा विष्ठा कमी/बंद होणे लवकरच आपत्कालीन ठरू शकते. तातडीने पशुवैद्याशी संपर्क करा; सशाला शांत ठेवा आणि गवत-पाणी उपलब्ध ठेवा. सूचनेशिवाय जबरदस्तीने खाऊ घालू नका.",
+    },
+    "Telugu": {
+        "care_guide_title": "పశు సంరక్షణ మరియు వ్యాధి మార్గదర్శిని", "care_choose_animal": "జంతువును ఎంచుకోండి", "care_choose_topic": "ఆరోగ్య సమస్యను ఎంచుకోండి",
+        "care_supportive_label": "సురక్షిత సహాయక సంరక్షణ", "care_urgent_label": "ఈ లక్షణాలుంటే వెంటనే పశువైద్యుడిని సంప్రదించండి", "care_species_note": "ఈ జంతువుకు ప్రత్యేక హెచ్చరిక",
+        "care_scope_note": "ఈ మార్గదర్శిని సాధారణ హెచ్చరిక సంకేతాలను మాత్రమే కవర్ చేస్తుంది; ప్రతి వ్యాధిని కాదు. ఒకే లక్షణాలకు వేర్వేరు కారణాలు ఉండవచ్చు; నిర్ధారణ మరియు చికిత్సను పశువైద్యుడే నిర్ణయించాలి.",
+        "care_no_treatment": "పశువైద్యుడి సూచన లేకుండా మానవుల లేదా మిగిలిన మందులు ఇవ్వవద్దు, బలవంతంగా ఆహారం/నీరు పెట్టవద్దు, రసాయనాలు/ఇంటి చికిత్సలు వాడవద్దు.",
+        "care_urgent_signs": "శ్వాస ఇబ్బంది, కుప్పకూలడం, మూర్ఛలు, ఆగని రక్తస్రావం, తీవ్రమైన వాపు, మూత్రం చేయలేకపోవడం, వేగంగా క్షీణించడం లేదా అనేక జంతువులు అకస్మాత్తుగా అనారోగ్యం పాలవడం అత్యవసర పశువైద్య సహాయం అవసరమని సూచిస్తాయి.",
+        "care_bloat_title": "కడుపు ఉబ్బరం లేదా వాపు", "care_reproductive_title": "పునరుత్పత్తి లేదా ప్రసవ సమస్య", "care_toxin_title": "విషం లేదా విషపదార్థం అనుమానం",
+        "care_flock_title": "మందలో వ్యాధి లేదా ఆకస్మిక మరణాలు", "care_egg_title": "గుడ్లు పెట్టడం లేదా ఉత్పత్తిలో మార్పు", "care_urinary_title": "మూత్ర లేదా పునరుత్పత్తి మార్పు",
+        "care_colic_title": "తీవ్రమైన కడుపు నొప్పి (కోలిక్)", "care_rabbit_gi_title": "తక్కువగా తినడం లేదా విసర్జన తగ్గడం", "care_dental_title": "పళ్లు లేదా నమలడంలో సమస్య",
+        "care_group_ruminant": "ఆవు, గేదె, మేక, గొర్రె, ఒంటెలలో అకస్మాత్తుగా కడుపు ఉబ్బడం, నిలబడలేకపోవడం, నోటి పుండ్లతో లాలాజలం/కుంటడం లేదా అనేక జంతువులు అనారోగ్యం పాలవడం కనిపిస్తే వెంటనే పశువైద్యుడిని సంప్రదించండి. ఉబ్బిన కడుపును గుచ్చవద్దు; అనారోగ్య జంతువులను మందల మధ్య తరలించవద్దు.",
+        "care_group_poultry": "కోళ్లు, బాతులు, టర్కీలు, పావురాల్లో వీలైతే అనారోగ్య పక్షులను వేరుగా ఉంచండి; ఆహారం/నీటి పాత్రలను వేరుగా వాడండి. అనేక పక్షులు అనారోగ్యంగా ఉంటే లేదా ఆకస్మిక మరణాలుంటే వెంటనే పశువైద్యుడిని సంప్రదించండి. పక్షులను మందల మధ్య తరలించవద్దు.",
+        "care_group_swine": "పందుల్లో జ్వరంతో దగ్గు/విరేచనాలు, చర్మం రంగు మారడం, అనేక పందులు అనారోగ్యం పాలవడం లేదా ఆకస్మిక మరణాలు ఉంటే వెంటనే పశువైద్య/పశు ఆరోగ్య సేవను సంప్రదించండి. సూచన వచ్చే వరకు పందులు, పరికరాల కదలికను పరిమితం చేయండి.",
+        "care_group_companion": "కుక్కలు, పిల్లుల్లో విషపదార్థం అనుమానం, కుప్పకూలడం, పదేపదే వాంతులు, శ్వాస ఇబ్బంది లేదా మూత్రం చేయలేకపోవడం అత్యవసరం. పశువైద్యుడి సూచన లేకుండా వాంతి చేయించవద్దు లేదా మానవుల మందులు ఇవ్వవద్దు.",
+        "care_group_equine": "గుర్రం లేదా గాడిద నేలను తన్నడం, పదేపదే దొర్లడం, పొట్టవైపు చూడడం, చెమటలు పట్టడం లేదా పేడ వేయకపోవడం కోలిక్ సూచన కావచ్చు; ఇది అత్యవసరం. పశువైద్యుడిని పిలవండి; మందులు ఇవ్వవద్దు లేదా బలవంతంగా వ్యాయామం చేయించవద్దు.",
+        "care_group_rabbit": "కుందేలు తినకపోవడం లేదా విసర్జన తగ్గడం/ఆగిపోవడం త్వరగా అత్యవసరంగా మారవచ్చు. వెంటనే పశువైద్యుడిని సంప్రదించండి; ప్రశాంతంగా ఉంచి గడ్డి, నీరు అందుబాటులో ఉంచండి. సూచన లేకుండా బలవంతంగా ఆహారం పెట్టవద్దు.",
+    },
+    "Tamil": {
+        "care_guide_title": "கால்நடை பராமரிப்பு மற்றும் நோய் வழிகாட்டி", "care_choose_animal": "விலங்கைத் தேர்ந்தெடுக்கவும்", "care_choose_topic": "உடல்நலப் பிரச்சினையைத் தேர்ந்தெடுக்கவும்",
+        "care_supportive_label": "பாதுகாப்பான ஆதரவு பராமரிப்பு", "care_urgent_label": "இந்த அறிகுறிகள் இருந்தால் உடனடியாக கால்நடை மருத்துவரை அணுகவும்", "care_species_note": "இந்த விலங்குக்கான சிறப்பு எச்சரிக்கை",
+        "care_scope_note": "இந்த வழிகாட்டி பொதுவான எச்சரிக்கை அறிகுறிகளை மட்டுமே உள்ளடக்குகிறது; எல்லா நோய்களையும் அல்ல. ஒரே அறிகுறிக்கு பல காரணங்கள் இருக்கலாம்; நோயறிதல் மற்றும் சிகிச்சையை கால்நடை மருத்துவரே தீர்மானிக்க வேண்டும்.",
+        "care_no_treatment": "மருத்துவர் அறிவுறுத்தாமல் மனிதர்களுக்கான அல்லது மீதமுள்ள மருந்துகளை கொடுக்காதீர்கள்; வலுக்கட்டாயமாக உணவு/தண்ணீர் கொடுக்காதீர்கள்; ரசாயனங்கள்/வீட்டு வைத்தியங்களைப் பயன்படுத்தாதீர்கள்.",
+        "care_urgent_signs": "சுவாச சிரமம், மயங்கி விழுதல், வலிப்பு, நிற்காத இரத்தப்போக்கு, கடுமையான வீக்கம், சிறுநீர் கழிக்க முடியாமை, விரைவாக மோசமாதல் அல்லது பல விலங்குகள் திடீரென நோய்வாய்ப்படுதல் அவசர கால்நடை மருத்துவ உதவி தேவை என்பதைக் குறிக்கும்.",
+        "care_bloat_title": "வயிறு உப்புசம் அல்லது வீக்கம்", "care_reproductive_title": "இனப்பெருக்கம் அல்லது பிரசவப் பிரச்சினை", "care_toxin_title": "நச்சு அல்லது விஷப்பொருள் சந்தேகம்",
+        "care_flock_title": "கூட்டத்தில் நோய் அல்லது திடீர் இறப்புகள்", "care_egg_title": "முட்டையிடுதல் அல்லது உற்பத்தி மாற்றம்", "care_urinary_title": "சிறுநீர் அல்லது இனப்பெருக்க மாற்றம்",
+        "care_colic_title": "கடுமையான வயிற்று வலி (கோலிக்)", "care_rabbit_gi_title": "குறைவாக உண்பது அல்லது கழிவு குறைதல்", "care_dental_title": "பல் அல்லது மெல்லும் பிரச்சினை",
+        "care_group_ruminant": "பசு, எருமை, ஆடு, செம்மறியாடு, ஒட்டகத்தில் திடீர் வயிற்று வீக்கம், நிற்க முடியாமை, வாய்ப்புண்களுடன் உமிழ்நீர்/நொண்டுதல் அல்லது பல விலங்குகள் நோய்வாய்ப்படுதல் இருந்தால் உடனடியாக மருத்துவரை அணுகவும். வீங்கிய வயிற்றைத் துளைக்காதீர்கள்; நோய்வாய்ப்பட்ட விலங்குகளை கூட்டங்களுக்கு இடையே நகர்த்தாதீர்கள்.",
+        "care_group_poultry": "கோழி, வாத்து, வான்கோழி, புறாக்களில் நோய்வாய்ப்பட்ட பறவைகளை பாதுகாப்பாக இருந்தால் தனியாக வைக்கவும்; உணவு/தண்ணீர் பாத்திரங்களைப் பிரிக்கவும். பல பறவைகள் நோயுற்றாலோ திடீர் இறப்புகள் ஏற்பட்டாலோ உடனே மருத்துவரை அணுகவும். பறவைகளை கூட்டங்களுக்கு இடையே நகர்த்தாதீர்கள்.",
+        "care_group_swine": "பன்றிகளில் காய்ச்சலுடன் இருமல்/வயிற்றுப்போக்கு, தோல் நிறமாற்றம், பல பன்றிகள் நோய்வாய்ப்படுதல் அல்லது திடீர் இறப்புகள் இருந்தால் உடனடியாக கால்நடை/விலங்கு சுகாதார சேவையை அணுகவும். அறிவுரை கிடைக்கும் வரை பன்றிகள் மற்றும் உபகரணங்களின் நகர்வைக் கட்டுப்படுத்தவும்.",
+        "care_group_companion": "நாய் அல்லது பூனையில் நச்சு உட்கொண்ட சந்தேகம், மயங்கி விழுதல், மீண்டும் மீண்டும் வாந்தி, சுவாச சிரமம் அல்லது சிறுநீர் கழிக்க முடியாமை அவசர நிலை. மருத்துவர் கூறாமல் வாந்தி வரவழைக்கவோ மனித மருந்து கொடுக்கவோ வேண்டாம்.",
+        "care_group_equine": "குதிரை அல்லது கழுதை தரையை உதைத்தல், மீண்டும் மீண்டும் உருளுதல், வயிற்றைப் பார்த்தல், வியர்த்தல் அல்லது சாணம் வெளியேறாமை கோலிக் அறிகுறியாக இருக்கலாம்; இது அவசரம். மருத்துவரை அழைக்கவும்; மருந்து கொடுக்கவோ கட்டாயமாக உடற்பயிற்சி செய்யவோ வேண்டாம்.",
+        "care_group_rabbit": "முயல் உண்பதை நிறுத்துதல் அல்லது கழிவு குறைதல்/நிற்றல் விரைவில் அவசரமாகலாம். உடனே மருத்துவரை அணுகவும்; முயலை அமைதியாக வைத்து வைக்கோல், தண்ணீர் கிடைக்கச் செய்யவும். அறிவுறுத்தாமல் வலுக்கட்டாயமாக உணவளிக்க வேண்டாம்.",
+    },
+}
+for language_name, translations in ANIMAL_CARE_TRANSLATIONS.items():
     TRANSLATIONS[language_name].update(translations)
 
 CUSTOM_CSS = """
@@ -1270,7 +1405,26 @@ def render_module_page():
         else:
             st.info(t("no_alerts"))
     elif module_key == "care":
-        st.info(t("care_guidance"))
+        st.markdown(f"<h2>{t('care_guide_title')}</h2>", unsafe_allow_html=True)
+        animal = st.selectbox(
+            t("care_choose_animal"),
+            options=ANIMAL_OPTIONS,
+            format_func=lambda item: choice_label(item, ANIMAL_LABELS),
+            key="care_animal",
+        )
+        care_group = CARE_GROUP_BY_ANIMAL[animal]
+        topic = st.selectbox(
+            t("care_choose_topic"),
+            options=CARE_TOPICS_BY_GROUP[care_group],
+            format_func=lambda item: t(CARE_TOPIC_TITLE_KEYS[item]),
+            key="care_topic",
+        )
+        st.markdown(f"### {t(CARE_TOPIC_TITLE_KEYS[topic])}")
+        st.markdown(f"**{t('care_supportive_label')}:** {localized_care_advice(CARE_TOPIC_SYMPTOMS[topic], 'High Concern')}")
+        st.warning(f"**{t('care_urgent_label')}:** {t('care_urgent_signs')}")
+        st.info(t("care_group_" + care_group))
+        st.caption(t("care_no_treatment"))
+        st.caption(t("care_scope_note"))
 
 
 def render_farmer_page():
