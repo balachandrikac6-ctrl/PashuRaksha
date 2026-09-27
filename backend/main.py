@@ -1,5 +1,6 @@
 import sqlite3
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
@@ -31,6 +32,11 @@ app.add_middleware(
         "http://127.0.0.1:5175",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        *[
+            origin.strip()
+            for origin in os.getenv("CORS_ORIGINS", "").split(",")
+            if origin.strip()
+        ],
     ],
     allow_credentials=True,
     allow_methods=["*"],
