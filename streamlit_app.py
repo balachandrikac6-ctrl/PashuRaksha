@@ -541,7 +541,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "Risk Management", "risk_management_desc": "Monitor risk levels and plan interventions.",
         "role_caption": "{name} · {role} Portal", "animal_type": "Animal type", "appointment_date": "Appointment date",
         "appointment_time": "Appointment time", "reason": "Reason for appointment", "request_appointment": "Request appointment",
-        "enter_reason": "Enter a reason for the appointment.", "no_appointment_requests": "No appointment requests yet.",
+        "enter_reason": "Enter a reason for the appointment.", "no_appointment_requests": "No appointment requests yet. They appear here after a farmer books a visit.",
         "no_laboratory_records": "No laboratory records yet.", "care_guidance": "Provide clean water and a clean, shaded resting area. Contact a veterinarian for serious, persistent, or worsening symptoms. Do not give prescription medicines without veterinary guidance.",
         "risk_critical": "Critical", "risk_high_concern": "High Concern", "risk_moderate_concern": "Moderate Concern", "risk_mild_concern": "Mild Concern",
     },
@@ -563,7 +563,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "जोखिम प्रबंधन", "risk_management_desc": "जोखिम स्तर देखें और कार्रवाई की योजना बनाएँ।",
         "role_caption": "{name} · {role} पोर्टल", "animal_type": "पशु का प्रकार", "appointment_date": "अपॉइंटमेंट की तारीख",
         "appointment_time": "अपॉइंटमेंट का समय", "reason": "अपॉइंटमेंट का कारण", "request_appointment": "अपॉइंटमेंट का अनुरोध करें",
-        "enter_reason": "अपॉइंटमेंट का कारण दर्ज करें।", "no_appointment_requests": "अभी कोई अपॉइंटमेंट अनुरोध नहीं है।",
+        "enter_reason": "अपॉइंटमेंट का कारण दर्ज करें।", "no_appointment_requests": "अभी कोई अपॉइंटमेंट अनुरोध नहीं है। किसान के बुक करने पर अनुरोध यहाँ दिखाई देंगे।",
         "no_laboratory_records": "अभी कोई प्रयोगशाला रिकॉर्ड नहीं है।", "care_guidance": "साफ़ पानी और स्वच्छ, छायादार आराम की जगह दें। गंभीर, लगातार या बिगड़ते लक्षणों पर पशु चिकित्सक से संपर्क करें। पशु चिकित्सक की सलाह के बिना दवा न दें।",
         "risk_critical": "गंभीर", "risk_high_concern": "उच्च चिंता", "risk_moderate_concern": "मध्यम चिंता", "risk_mild_concern": "हल्की चिंता",
     },
@@ -585,7 +585,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "ಅಪಾಯ ನಿರ್ವಹಣೆ", "risk_management_desc": "ಅಪಾಯ ಮಟ್ಟಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಕ್ರಮಗಳನ್ನು ಯೋಜಿಸಿ.",
         "role_caption": "{name} · {role} ಪೋರ್ಟಲ್", "animal_type": "ಪಶುವಿನ ಪ್ರಕಾರ", "appointment_date": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ದಿನಾಂಕ",
         "appointment_time": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಸಮಯ", "reason": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಕಾರಣ", "request_appointment": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿಸಿ",
-        "enter_reason": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಕಾರಣವನ್ನು ನಮೂದಿಸಿ.", "no_appointment_requests": "ಇನ್ನೂ ಯಾವುದೇ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿಗಳಿಲ್ಲ.",
+        "enter_reason": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಕಾರಣವನ್ನು ನಮೂದಿಸಿ.", "no_appointment_requests": "ಇನ್ನೂ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿಗಳಿಲ್ಲ. ರೈತರು ಭೇಟಿ ಬುಕ್ ಮಾಡಿದಾಗ ಅವು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.",
         "no_laboratory_records": "ಇನ್ನೂ ಪ್ರಯೋಗಾಲಯ ದಾಖಲೆಗಳಿಲ್ಲ.", "care_guidance": "ಶುದ್ಧ ನೀರು ಮತ್ತು ಸ್ವಚ್ಛ, ನೆರಳಿನ ವಿಶ್ರಾಂತಿ ಸ್ಥಳವನ್ನು ಒದಗಿಸಿ. ಗಂಭೀರ ಅಥವಾ ಹದಗೆಡುತ್ತಿರುವ ಲಕ್ಷಣಗಳಿದ್ದರೆ ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ. ಪಶುವೈದ್ಯರ ಸಲಹೆಯಿಲ್ಲದೆ ಔಷಧ ನೀಡಬೇಡಿ.",
         "risk_critical": "ಗಂಭೀರ", "risk_high_concern": "ಹೆಚ್ಚಿನ ಚಿಂತೆ", "risk_moderate_concern": "ಮಧ್ಯಮ ಚಿಂತೆ", "risk_mild_concern": "ಕಡಿಮೆ ಚಿಂತೆ",
     },
@@ -607,7 +607,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "धोका व्यवस्थापन", "risk_management_desc": "धोक्याची पातळी पाहून उपाययोजना आखा.",
         "role_caption": "{name} · {role} पोर्टल", "animal_type": "प्राण्याचा प्रकार", "appointment_date": "भेटीची तारीख",
         "appointment_time": "भेटीची वेळ", "reason": "भेटीचे कारण", "request_appointment": "भेटीची विनंती करा",
-        "enter_reason": "भेटीचे कारण लिहा.", "no_appointment_requests": "अद्याप भेटीच्या विनंत्या नाहीत.",
+        "enter_reason": "भेटीचे कारण लिहा.", "no_appointment_requests": "अद्याप भेटीच्या विनंत्या नाहीत. शेतकऱ्याने भेट बुक केल्यावर त्या येथे दिसतील.",
         "no_laboratory_records": "अद्याप प्रयोगशाळेच्या नोंदी नाहीत.", "care_guidance": "स्वच्छ पाणी आणि स्वच्छ, सावलीची विश्रांतीची जागा द्या. गंभीर किंवा वाढणाऱ्या लक्षणांसाठी पशुवैद्याशी संपर्क साधा. पशुवैद्यकीय सल्ल्याशिवाय औषध देऊ नका.",
         "risk_critical": "गंभीर", "risk_high_concern": "उच्च चिंता", "risk_moderate_concern": "मध्यम चिंता", "risk_mild_concern": "कमी चिंता",
     },
@@ -629,7 +629,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "ప్రమాద నిర్వహణ", "risk_management_desc": "ప్రమాద స్థాయిలను సమీక్షించి చర్యలను ప్రణాళిక చేయండి.",
         "role_caption": "{name} · {role} పోర్టల్", "animal_type": "జంతువు రకం", "appointment_date": "అపాయింట్‌మెంట్ తేదీ",
         "appointment_time": "అపాయింట్‌మెంట్ సమయం", "reason": "అపాయింట్‌మెంట్ కారణం", "request_appointment": "అపాయింట్‌మెంట్ కోరండి",
-        "enter_reason": "అపాయింట్‌మెంట్ కారణాన్ని నమోదు చేయండి.", "no_appointment_requests": "ఇంకా అపాయింట్‌మెంట్ అభ్యర్థనలు లేవు.",
+        "enter_reason": "అపాయింట్‌మెంట్ కారణాన్ని నమోదు చేయండి.", "no_appointment_requests": "ఇంకా అపాయింట్‌మెంట్ అభ్యర్థనలు లేవు. రైతు బుక్ చేసిన తర్వాత ఇక్కడ కనిపిస్తాయి.",
         "no_laboratory_records": "ఇంకా ప్రయోగశాల రికార్డులు లేవు.", "care_guidance": "శుభ్రమైన నీరు మరియు శుభ్రమైన నీడగల విశ్రాంతి స్థలాన్ని అందించండి. తీవ్రమైన లేదా అధ్వాన్నమవుతున్న లక్షణాలుంటే పశువైద్యుడిని సంప్రదించండి. పశువైద్యుడి సలహా లేకుండా మందులు ఇవ్వవద్దు.",
         "risk_critical": "తీవ్రమైనది", "risk_high_concern": "అధిక ఆందోళన", "risk_moderate_concern": "మధ్యస్థ ఆందోళన", "risk_mild_concern": "తక్కువ ఆందోళన",
     },
@@ -651,7 +651,7 @@ TRANSLATION_EXTRAS = {
         "risk_management_module": "ஆபத்து மேலாண்மை", "risk_management_desc": "ஆபத்து நிலைகளை மதிப்பாய்வு செய்து நடவடிக்கைகளைத் திட்டமிடவும்.",
         "role_caption": "{name} · {role} போர்டல்", "animal_type": "விலங்கு வகை", "appointment_date": "சந்திப்பு தேதி",
         "appointment_time": "சந்திப்பு நேரம்", "reason": "சந்திப்பிற்கான காரணம்", "request_appointment": "சந்திப்பைக் கோரவும்",
-        "enter_reason": "சந்திப்பிற்கான காரணத்தை உள்ளிடவும்.", "no_appointment_requests": "சந்திப்பு கோரிக்கைகள் எதுவும் இல்லை.",
+        "enter_reason": "சந்திப்பிற்கான காரணத்தை உள்ளிடவும்.", "no_appointment_requests": "சந்திப்பு கோரிக்கைகள் இன்னும் இல்லை. விவசாயி பதிவு செய்ததும் இங்கே தோன்றும்.",
         "no_laboratory_records": "ஆய்வக பதிவுகள் எதுவும் இல்லை.", "care_guidance": "சுத்தமான தண்ணீர் மற்றும் சுத்தமான நிழலான ஓய்வு இடத்தை வழங்கவும். கடுமையான அல்லது மோசமடையும் அறிகுறிகளுக்கு கால்நடை மருத்துவரை அணுகவும். மருத்துவரின் ஆலோசனையின்றி மருந்து கொடுக்க வேண்டாம்.",
         "risk_critical": "மிகக் கடுமை", "risk_high_concern": "அதிக கவலை", "risk_moderate_concern": "மிதமான கவலை", "risk_mild_concern": "குறைந்த கவலை",
     },
@@ -845,6 +845,11 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "Veterinary report updated", "lab_notification_message": "A veterinarian added an examination result for your animal report #{report_id}.",
         "save_lab_report": "Save veterinary report", "lab_report_saved": "Veterinary report saved.", "select_report": "Select an animal report", "no_reports_to_examine": "No animal reports are available for examination.",
         "follow_up_date": "Follow-up date", "suggested_action": "Suggested action", "village_risk_summary": "Village risk overview", "no_risk_data": "No village risk data yet.",
+        "appointment_report": "Related health report (optional)", "appointment_requirements": "Appointment request details", "appointment_form_help": "Choose a health report if this visit is for a reported animal. Date, time, and reason are needed to submit the request.", "appointment_empty_title": "No appointments yet", "appointment_empty_message": "Your appointment requests and veterinary decisions will appear here.",
+        "farmer_reports_empty_title": "Your reports will appear here", "farmer_reports_empty_message": "Start with Animal Health Check. Submit an animal, village, and observed symptoms to create your first report.",
+        "team_reports_empty_title": "No farmer reports yet", "team_reports_empty_message": "Reports submitted through the Farmer portal will appear here with risk scores, symptoms, and village details.",
+        "laboratory_requirements": "What this portal needs", "laboratory_requirements_body": "A farmer must submit an Animal Health Check report first. Select that report, enter the examination result, and optionally add instructions, follow-up details, and notes.", "laboratory_no_reports": "No reports are ready for laboratory review. Ask a farmer to submit an Animal Health Check report first.",
+        "village_risk_empty_body": "Village risk is calculated from farmer health reports. Ask farmers to submit animal reports to begin monitoring village trends.", "risk_management_empty_body": "Risk recommendations appear after reports establish village risk levels. Continue routine prevention and collect timely farmer reports.", "risk_action_plan_title": "Risk action plan",
         "gov_action_critical": "Urgent veterinary assessment and coordinated animal-health response.", "gov_action_high": "Prioritize a veterinary visit and monitor affected animals closely.", "gov_action_medium": "Continue village monitoring and encourage preventive care.", "gov_action_low": "Maintain routine monitoring and preventive care.",
     },
     "Hindi": {
@@ -854,6 +859,12 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "पशु चिकित्सा रिपोर्ट अपडेट हुई", "lab_notification_message": "पशु चिकित्सक ने आपकी पशु रिपोर्ट #{report_id} के लिए जाँच का परिणाम जोड़ा है।",
         "save_lab_report": "पशु चिकित्सा रिपोर्ट सेव करें", "lab_report_saved": "पशु चिकित्सा रिपोर्ट सेव हुई।", "select_report": "पशु रिपोर्ट चुनें", "no_reports_to_examine": "जाँच के लिए कोई पशु रिपोर्ट उपलब्ध नहीं है।",
         "follow_up_date": "फॉलो-अप की तारीख", "suggested_action": "सुझाई गई कार्रवाई", "village_risk_summary": "गाँव जोखिम सारांश", "no_risk_data": "अभी गाँव का जोखिम डेटा उपलब्ध नहीं है।",
+        "appointment_report": "संबंधित स्वास्थ्य रिपोर्ट (वैकल्पिक)", "appointment_requirements": "अपॉइंटमेंट अनुरोध का विवरण", "appointment_form_help": "यदि यह मुलाकात किसी रिपोर्ट किए गए पशु के लिए है, तो उसकी स्वास्थ्य रिपोर्ट चुनें। अनुरोध भेजने के लिए तारीख, समय और कारण भरें।", "appointment_empty_title": "अभी कोई अपॉइंटमेंट नहीं है", "appointment_empty_message": "आपके अपॉइंटमेंट अनुरोध और पशु चिकित्सक के निर्णय यहाँ दिखाई देंगे।",
+        "farmer_reports_empty_title": "आपकी रिपोर्ट यहाँ दिखाई देंगी", "farmer_reports_empty_message": "Animal Health Check से शुरू करें। पहली रिपोर्ट के लिए पशु, गाँव और देखे गए लक्षण जमा करें।",
+        "team_reports_empty_title": "अभी किसान की रिपोर्ट नहीं है", "team_reports_empty_message": "Farmer पोर्टल से जमा रिपोर्टें जोखिम स्कोर, लक्षण और गाँव के विवरण के साथ यहाँ दिखाई देंगी।",
+        "laboratory_requirements": "इस पोर्टल के लिए आवश्यक जानकारी", "laboratory_requirements_body": "पहले किसान को Animal Health Check रिपोर्ट जमा करनी होगी। उस रिपोर्ट को चुनें, जाँच का परिणाम भरें और चाहें तो निर्देश, फॉलो-अप और टिप्पणियाँ जोड़ें।",
+        "laboratory_no_reports": "प्रयोगशाला जाँच के लिए अभी कोई रिपोर्ट नहीं है। किसान से पहले Animal Health Check रिपोर्ट जमा करने को कहें।",
+        "village_risk_empty_body": "गाँव का जोखिम किसान की स्वास्थ्य रिपोर्टों से निकाला जाता है। गाँव के रुझान देखने के लिए किसानों से पशु रिपोर्ट जमा करने को कहें।", "risk_management_empty_body": "रिपोर्टों से गाँव का जोखिम बनने पर सुझाव दिखाई देंगे। बचाव के उपाय जारी रखें और समय पर किसान रिपोर्टें एकत्र करें।", "risk_action_plan_title": "जोखिम कार्रवाई योजना",
         "gov_action_critical": "तत्काल पशु चिकित्सा जाँच और समन्वित पशु-स्वास्थ्य कार्रवाई करें।", "gov_action_high": "पशु चिकित्सा दौरे को प्राथमिकता दें और प्रभावित पशुओं पर नज़र रखें।", "gov_action_medium": "गाँव की निगरानी जारी रखें और बचाव की सलाह दें।", "gov_action_low": "नियमित निगरानी और बचाव के उपाय जारी रखें।",
     },
     "Kannada": {
@@ -863,6 +874,12 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ನವೀಕರಿಸಲಾಗಿದೆ", "lab_notification_message": "ಪಶುವೈದ್ಯರು ನಿಮ್ಮ ಪಶು ವರದಿ #{report_id}ಗೆ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶವನ್ನು ಸೇರಿಸಿದ್ದಾರೆ.",
         "save_lab_report": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ಉಳಿಸಿ", "lab_report_saved": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ಉಳಿಸಲಾಗಿದೆ.", "select_report": "ಪಶು ವರದಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ", "no_reports_to_examine": "ಪರೀಕ್ಷೆಗೆ ಯಾವುದೇ ಪಶು ವರದಿಗಳಿಲ್ಲ.",
         "follow_up_date": "ಮರುಪರಿಶೀಲನೆ ದಿನಾಂಕ", "suggested_action": "ಸೂಚಿಸಿದ ಕ್ರಮ", "village_risk_summary": "ಗ್ರಾಮದ ಅಪಾಯ ಸಾರಾಂಶ", "no_risk_data": "ಇನ್ನೂ ಗ್ರಾಮದ ಅಪಾಯದ ಮಾಹಿತಿ ಇಲ್ಲ.",
+        "appointment_report": "ಸಂಬಂಧಿತ ಆರೋಗ್ಯ ವರದಿ (ಐಚ್ಛಿಕ)", "appointment_requirements": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿ ವಿವರಗಳು", "appointment_form_help": "ಈ ಭೇಟಿ ವರದಿ ಮಾಡಿದ ಪಶುವಿಗಾಗಿ ಆಗಿದ್ದರೆ ಅದರ ಆರೋಗ್ಯ ವರದಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ. ವಿನಂತಿಗೆ ದಿನಾಂಕ, ಸಮಯ ಮತ್ತು ಕಾರಣ ಅಗತ್ಯ.", "appointment_empty_title": "ಇನ್ನೂ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್‌ಗಳಿಲ್ಲ", "appointment_empty_message": "ನಿಮ್ಮ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿಗಳು ಮತ್ತು ಪಶುವೈದ್ಯರ ನಿರ್ಧಾರಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.",
+        "farmer_reports_empty_title": "ನಿಮ್ಮ ವರದಿಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ", "farmer_reports_empty_message": "ಪಶು ಆರೋಗ್ಯ ಪರಿಶೀಲನೆಯಿಂದ ಪ್ರಾರಂಭಿಸಿ. ಮೊದಲ ವರದಿಗೆ ಪಶು, ಗ್ರಾಮ ಮತ್ತು ಗಮನಿಸಿದ ಲಕ್ಷಣಗಳನ್ನು ಸಲ್ಲಿಸಿ.",
+        "team_reports_empty_title": "ಇನ್ನೂ ರೈತರ ವರದಿಗಳಿಲ್ಲ", "team_reports_empty_message": "ರೈತ ಪೋರ್ಟಲ್‌ನಿಂದ ಸಲ್ಲಿಸಿದ ವರದಿಗಳು ಅಪಾಯ ಅಂಕ, ಲಕ್ಷಣಗಳು ಮತ್ತು ಗ್ರಾಮದ ವಿವರಗಳೊಂದಿಗೆ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.",
+        "laboratory_requirements": "ಈ ಪೋರ್ಟಲ್‌ಗೆ ಬೇಕಾದ ಮಾಹಿತಿ", "laboratory_requirements_body": "ಮೊದಲು ರೈತರು ಪಶು ಆರೋಗ್ಯ ಪರಿಶೀಲನೆ ವರದಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು. ಆ ವರದಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ, ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶವನ್ನು ನಮೂದಿಸಿ; ಬೇಕಿದ್ದರೆ ಸೂಚನೆಗಳು, ಮರುಪರಿಶೀಲನೆ ಮತ್ತು ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸಿ.",
+        "laboratory_no_reports": "ಪ್ರಯೋಗಾಲಯ ಪರಿಶೀಲನೆಗೆ ವರದಿಗಳಿಲ್ಲ. ಮೊದಲು ರೈತರಿಂದ ಪಶು ಆರೋಗ್ಯ ಪರಿಶೀಲನೆ ವರದಿ ಸಲ್ಲಿಸಲು ಕೇಳಿ.",
+        "village_risk_empty_body": "ಗ್ರಾಮದ ಅಪಾಯವನ್ನು ರೈತರ ಆರೋಗ್ಯ ವರದಿಗಳಿಂದ ಲೆಕ್ಕಿಸಲಾಗುತ್ತದೆ. ಗ್ರಾಮದ ಪ್ರವೃತ್ತಿಗಳನ್ನು ಗಮನಿಸಲು ರೈತರಿಂದ ಪಶು ವರದಿಗಳನ್ನು ಸಲ್ಲಿಸಲು ಕೇಳಿ.", "risk_management_empty_body": "ವರದಿಗಳಿಂದ ಗ್ರಾಮದ ಅಪಾಯ ಮಟ್ಟಗಳು ರೂಪುಗೊಂಡ ನಂತರ ಕ್ರಮದ ಸಲಹೆಗಳು ಕಾಣುತ್ತವೆ. ತಡೆಗಟ್ಟುವ ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ ಮತ್ತು ವರದಿಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ.", "risk_action_plan_title": "ಅಪಾಯ ಕ್ರಮ ಯೋಜನೆ",
         "gov_action_critical": "ತಕ್ಷಣ ಪಶುವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆ ಮತ್ತು ಸಮನ್ವಯಿತ ಪಶು ಆರೋಗ್ಯ ಕ್ರಮ ಕೈಗೊಳ್ಳಿ.", "gov_action_high": "ಪಶುವೈದ್ಯರ ಭೇಟಿಗೆ ಆದ್ಯತೆ ನೀಡಿ ಮತ್ತು ಬಾಧಿತ ಪಶುಗಳನ್ನು ಗಮನಿಸಿ.", "gov_action_medium": "ಗ್ರಾಮ ಮೇಲ್ವಿಚಾರಣೆ ಮುಂದುವರಿಸಿ ಮತ್ತು ತಡೆಗಟ್ಟುವ ಆರೈಕೆಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ.", "gov_action_low": "ನಿಯಮಿತ ಮೇಲ್ವಿಚಾರಣೆ ಮತ್ತು ತಡೆಗಟ್ಟುವ ಆರೈಕೆ ಮುಂದುವರಿಸಿ.",
     },
     "Marathi": {
@@ -872,6 +889,12 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "पशुवैद्यकीय अहवाल अद्ययावत", "lab_notification_message": "पशुवैद्यांनी तुमच्या पशु अहवाल #{report_id} साठी तपासणीचा निकाल जोडला आहे.",
         "save_lab_report": "पशुवैद्यकीय अहवाल जतन करा", "lab_report_saved": "पशुवैद्यकीय अहवाल जतन झाला.", "select_report": "पशु अहवाल निवडा", "no_reports_to_examine": "तपासणीसाठी पशु अहवाल उपलब्ध नाहीत.",
         "follow_up_date": "पुढील तपासणीची तारीख", "suggested_action": "सुचवलेली कृती", "village_risk_summary": "गावाच्या जोखमीचा आढावा", "no_risk_data": "गावाच्या जोखमीची माहिती अद्याप उपलब्ध नाही.",
+        "appointment_report": "संबंधित आरोग्य अहवाल (ऐच्छिक)", "appointment_requirements": "भेट विनंतीचा तपशील", "appointment_form_help": "ही भेट नोंदवलेल्या पशूसाठी असल्यास त्याचा आरोग्य अहवाल निवडा. विनंतीसाठी तारीख, वेळ आणि कारण आवश्यक आहे.", "appointment_empty_title": "अद्याप भेटी नाहीत", "appointment_empty_message": "तुमच्या भेटीच्या विनंत्या आणि पशुवैद्यांचे निर्णय येथे दिसतील.",
+        "farmer_reports_empty_title": "तुमचे अहवाल येथे दिसतील", "farmer_reports_empty_message": "पशु आरोग्य तपासणीपासून सुरुवात करा. पहिल्या अहवालासाठी प्राणी, गाव आणि दिसलेली लक्षणे नोंदवा.",
+        "team_reports_empty_title": "अद्याप शेतकऱ्यांचे अहवाल नाहीत", "team_reports_empty_message": "शेतकरी पोर्टलवरील अहवाल जोखीम गुण, लक्षणे आणि गावाच्या माहितीसह येथे दिसतील.",
+        "laboratory_requirements": "या पोर्टलसाठी आवश्यक माहिती", "laboratory_requirements_body": "प्रथम शेतकऱ्याने पशु आरोग्य तपासणी अहवाल सादर करणे आवश्यक आहे. तो अहवाल निवडा, तपासणीचा निकाल भरा आणि हवे असल्यास सूचना, पुढील तपासणी व नोंदी जोडा.",
+        "laboratory_no_reports": "प्रयोगशाळा तपासणीसाठी अहवाल उपलब्ध नाहीत. प्रथम शेतकऱ्याला पशु आरोग्य तपासणी अहवाल सादर करण्यास सांगा.",
+        "village_risk_empty_body": "गावाची जोखीम शेतकऱ्यांच्या आरोग्य अहवालांवरून मोजली जाते. गावातील बदल पाहण्यासाठी पशु अहवाल सादर करण्यास सांगा.", "risk_management_empty_body": "अहवालांमधून गावाची जोखीम ठरल्यानंतर कृती सूचना दिसतील. प्रतिबंधात्मक काळजी सुरू ठेवा आणि वेळेवर अहवाल जमा करा.", "risk_action_plan_title": "जोखीम कृती योजना",
         "gov_action_critical": "तातडीची पशुवैद्यकीय तपासणी आणि समन्वित पशु-आरोग्य प्रतिसाद द्या.", "gov_action_high": "पशुवैद्यकीय भेटीस प्राधान्य द्या आणि बाधित पशूंवर लक्ष ठेवा.", "gov_action_medium": "गावाचे निरीक्षण सुरू ठेवा आणि प्रतिबंधात्मक काळजीला प्रोत्साहन द्या.", "gov_action_low": "नियमित निरीक्षण आणि प्रतिबंधात्मक काळजी सुरू ठेवा.",
     },
     "Telugu": {
@@ -881,6 +904,12 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "పశువైద్య నివేదిక నవీకరించబడింది", "lab_notification_message": "పశువైద్యుడు మీ పశు నివేదిక #{report_id}కు పరీక్ష ఫలితాన్ని జోడించారు.",
         "save_lab_report": "పశువైద్య నివేదికను సేవ్ చేయండి", "lab_report_saved": "పశువైద్య నివేదిక సేవ్ చేయబడింది.", "select_report": "పశు నివేదికను ఎంచుకోండి", "no_reports_to_examine": "పరీక్షించడానికి పశు నివేదికలు లేవు.",
         "follow_up_date": "తదుపరి పరీక్ష తేదీ", "suggested_action": "సూచించిన చర్య", "village_risk_summary": "గ్రామ ప్రమాద సమీక్ష", "no_risk_data": "ఇంకా గ్రామ ప్రమాద సమాచారం లేదు.",
+        "appointment_report": "సంబంధిత ఆరోగ్య నివేదిక (ఐచ్ఛికం)", "appointment_requirements": "అపాయింట్‌మెంట్ అభ్యర్థన వివరాలు", "appointment_form_help": "ఈ సందర్శన నివేదించిన జంతువు కోసం అయితే దాని ఆరోగ్య నివేదికను ఎంచుకోండి. అభ్యర్థనకు తేదీ, సమయం, కారణం అవసరం.", "appointment_empty_title": "ఇంకా అపాయింట్‌మెంట్‌లు లేవు", "appointment_empty_message": "మీ అపాయింట్‌మెంట్ అభ్యర్థనలు మరియు పశువైద్యుడి నిర్ణయాలు ఇక్కడ కనిపిస్తాయి.",
+        "farmer_reports_empty_title": "మీ నివేదికలు ఇక్కడ కనిపిస్తాయి", "farmer_reports_empty_message": "పశు ఆరోగ్య పరీక్షతో ప్రారంభించండి. మొదటి నివేదికకు జంతువు, గ్రామం, గమనించిన లక్షణాలు నమోదు చేయండి.",
+        "team_reports_empty_title": "ఇంకా రైతు నివేదికలు లేవు", "team_reports_empty_message": "రైతు పోర్టల్‌లో సమర్పించిన నివేదికలు ప్రమాద స్కోరు, లక్షణాలు, గ్రామ వివరాలతో ఇక్కడ కనిపిస్తాయి.",
+        "laboratory_requirements": "ఈ పోర్టల్‌కు అవసరమైన వివరాలు", "laboratory_requirements_body": "ముందుగా రైతు పశు ఆరోగ్య పరీక్ష నివేదికను సమర్పించాలి. ఆ నివేదికను ఎంచుకుని పరీక్ష ఫలితాన్ని నమోదు చేయండి; అవసరమైతే సూచనలు, తదుపరి పరీక్ష వివరాలు, గమనికలు జోడించండి.",
+        "laboratory_no_reports": "ప్రయోగశాల పరిశీలనకు నివేదికలు సిద్ధంగా లేవు. ముందుగా రైతును పశు ఆరోగ్య పరీక్ష నివేదిక సమర్పించమని అడగండి.",
+        "village_risk_empty_body": "రైతుల ఆరోగ్య నివేదికల ఆధారంగా గ్రామ ప్రమాదం లెక్కించబడుతుంది. గ్రామ ధోరణులను చూడటానికి పశు నివేదికలు సమర్పించమని రైతులను అడగండి.", "risk_management_empty_body": "నివేదికలతో గ్రామ ప్రమాద స్థాయిలు ఏర్పడిన తర్వాత చర్యల సూచనలు కనిపిస్తాయి. నివారణ సంరక్షణ కొనసాగించి నివేదికలను సేకరించండి.", "risk_action_plan_title": "ప్రమాద చర్య ప్రణాళిక",
         "gov_action_critical": "తక్షణ పశువైద్య పరీక్ష మరియు సమన్వయిత పశు ఆరోగ్య చర్య చేపట్టండి.", "gov_action_high": "పశువైద్య సందర్శనకు ప్రాధాన్యత ఇచ్చి ప్రభావిత జంతువులను గమనించండి.", "gov_action_medium": "గ్రామ పర్యవేక్షణ కొనసాగించి నివారణ సంరక్షణను ప్రోత్సహించండి.", "gov_action_low": "సాధారణ పర్యవేక్షణ మరియు నివారణ సంరక్షణ కొనసాగించండి.",
     },
     "Tamil": {
@@ -890,6 +919,12 @@ PORTAL_ACTION_TRANSLATIONS = {
         "lab_notification_title": "கால்நடை மருத்துவ அறிக்கை புதுப்பிக்கப்பட்டது", "lab_notification_message": "உங்கள் கால்நடை அறிக்கை #{report_id}க்கான பரிசோதனை முடிவை மருத்துவர் சேர்த்துள்ளார்.",
         "save_lab_report": "கால்நடை மருத்துவ அறிக்கையைச் சேமிக்கவும்", "lab_report_saved": "கால்நடை மருத்துவ அறிக்கை சேமிக்கப்பட்டது.", "select_report": "கால்நடை அறிக்கையைத் தேர்ந்தெடுக்கவும்", "no_reports_to_examine": "பரிசோதனைக்கு கால்நடை அறிக்கைகள் இல்லை.",
         "follow_up_date": "மீண்டும் பரிசோதனை தேதி", "suggested_action": "பரிந்துரைக்கப்பட்ட நடவடிக்கை", "village_risk_summary": "கிராம ஆபத்து சுருக்கம்", "no_risk_data": "கிராம ஆபத்து தகவல் இன்னும் இல்லை.",
+        "appointment_report": "தொடர்புடைய ஆரோக்கிய அறிக்கை (விருப்பம்)", "appointment_requirements": "சந்திப்பு கோரிக்கை விவரங்கள்", "appointment_form_help": "இந்த வருகை ஏற்கெனவே அறிக்கையிடப்பட்ட விலங்குக்கானது என்றால் அதன் ஆரோக்கிய அறிக்கையைத் தேர்ந்தெடுக்கவும். கோரிக்கைக்கு தேதி, நேரம், காரணம் தேவை.", "appointment_empty_title": "சந்திப்புகள் இன்னும் இல்லை", "appointment_empty_message": "உங்கள் சந்திப்பு கோரிக்கைகளும் கால்நடை மருத்துவரின் முடிவுகளும் இங்கே தோன்றும்.",
+        "farmer_reports_empty_title": "உங்கள் அறிக்கைகள் இங்கே தோன்றும்", "farmer_reports_empty_message": "கால்நடை ஆரோக்கிய பரிசோதனையுடன் தொடங்குங்கள். முதல் அறிக்கைக்கு விலங்கு, கிராமம், காணப்பட்ட அறிகுறிகளைச் சமர்ப்பிக்கவும்.",
+        "team_reports_empty_title": "விவசாயி அறிக்கைகள் இன்னும் இல்லை", "team_reports_empty_message": "விவசாயி போர்டலில் சமர்ப்பித்த அறிக்கைகள் ஆபத்து மதிப்பெண், அறிகுறிகள், கிராம விவரங்களுடன் இங்கே தோன்றும்.",
+        "laboratory_requirements": "இந்த போர்டலுக்குத் தேவையானவை", "laboratory_requirements_body": "முதலில் விவசாயி கால்நடை ஆரோக்கிய பரிசோதனை அறிக்கையைச் சமர்ப்பிக்க வேண்டும். அந்த அறிக்கையைத் தேர்ந்தெடுத்து பரிசோதனை முடிவை உள்ளிடவும்; விருப்பமாக வழிமுறைகள், தொடர் பரிசோதனை, குறிப்புகளையும் சேர்க்கவும்.",
+        "laboratory_no_reports": "ஆய்வக பரிசோதனைக்கான அறிக்கைகள் இல்லை. முதலில் கால்நடை ஆரோக்கிய பரிசோதனை அறிக்கையைச் சமர்ப்பிக்க விவசாயியிடம் கேட்கவும்.",
+        "village_risk_empty_body": "விவசாயிகளின் ஆரோக்கிய அறிக்கைகளிலிருந்து கிராம ஆபத்து கணக்கிடப்படுகிறது. கிராமப் போக்குகளைப் பார்க்க கால்நடை அறிக்கைகளைச் சமர்ப்பிக்கச் சொல்லவும்.", "risk_management_empty_body": "அறிக்கைகள் கிராம ஆபத்து நிலைகளை உருவாக்கிய பிறகு நடவடிக்கை பரிந்துரைகள் தோன்றும். தடுப்பு பராமரிப்பைத் தொடர்ந்து அறிக்கைகளைச் சேகரிக்கவும்.", "risk_action_plan_title": "ஆபத்து நடவடிக்கைத் திட்டம்",
         "gov_action_critical": "உடனடி கால்நடை பரிசோதனை மற்றும் ஒருங்கிணைந்த விலங்கு சுகாதார நடவடிக்கை மேற்கொள்ளவும்.", "gov_action_high": "கால்நடை மருத்துவர் வருகைக்கு முன்னுரிமை அளித்து பாதிக்கப்பட்ட விலங்குகளை கண்காணிக்கவும்.", "gov_action_medium": "கிராம கண்காணிப்பைத் தொடர்ந்து தடுப்பு பராமரிப்பை ஊக்குவிக்கவும்.", "gov_action_low": "வழக்கமான கண்காணிப்பு மற்றும் தடுப்பு பராமரிப்பைத் தொடரவும்.",
     },
 }
@@ -1653,9 +1688,24 @@ def render_module_page():
                     unsafe_allow_html=True,
                 )
         else:
-            st.info(t("no_reports"))
+            if profile["role"] == "Farmer":
+                st.info(f"**{t('farmer_reports_empty_title')}** {t('farmer_reports_empty_message')}")
+                if st.button(t("open_module").format(title=t("animal_health")), key="start_first_health_report", type="primary"):
+                    st.session_state.portal_module = "health"
+                    st.rerun()
+            else:
+                st.info(f"**{t('team_reports_empty_title')}** {t('team_reports_empty_message')}")
     elif module_key == "appointments":
+        farmer_reports = load_profile_reports(profile_id=profile["id"], role="Farmer")
+        farmer_report_by_id = {report["id"]: report for report in farmer_reports}
+        st.markdown(f"### {t('appointment_requirements')}")
+        st.caption(t("appointment_form_help"))
         with st.form("module_appointment"):
+            report_id = st.selectbox(
+                t("appointment_report"),
+                options=[None, *farmer_report_by_id],
+                format_func=lambda item: t("appointment_report") if item is None else f"#{item} · {choice_label(farmer_report_by_id[item]['animal_type'], ANIMAL_LABELS)} · {farmer_report_by_id[item]['village']}",
+            )
             appointment_date = st.date_input(t("appointment_date"))
             appointment_time = st.time_input(t("appointment_time"))
             reason = st.text_area(t("reason"))
@@ -1667,8 +1717,8 @@ def render_module_page():
                 conn = connect_db()
                 created_at = datetime.now().isoformat(timespec="seconds")
                 conn.execute(
-                    "INSERT INTO appointments (farmer_profile_id, appointment_date, appointment_time, reason, status, is_demo, created_at) VALUES (?, ?, ?, ?, 'Pending', 0, ?)",
-                    (profile["id"], appointment_date.isoformat(), appointment_time.strftime("%H:%M"), reason.strip(), created_at),
+                    "INSERT INTO appointments (report_id, farmer_profile_id, appointment_date, appointment_time, reason, status, is_demo, created_at) VALUES (?, ?, ?, ?, ?, 'Pending', 0, ?)",
+                    (report_id, profile["id"], appointment_date.isoformat(), appointment_time.strftime("%H:%M"), reason.strip(), created_at),
                 )
                 appointment_message = t("appointment_notification_message").format(
                     date=appointment_date.isoformat(),
@@ -1697,16 +1747,19 @@ def render_module_page():
                 conn.close()
                 st.success(t("appointment_success"))
         conn = connect_db()
-        rows = conn.execute("SELECT * FROM appointments WHERE farmer_profile_id = ? ORDER BY id DESC", (profile["id"],)).fetchall()
+        rows = conn.execute(
+            "SELECT a.*, r.animal_type, r.village FROM appointments AS a LEFT JOIN animal_reports AS r ON r.id = a.report_id WHERE a.farmer_profile_id = ? ORDER BY a.id DESC",
+            (profile["id"],),
+        ).fetchall()
         conn.close()
         if rows:
             st.dataframe(
-                [{t("appointment_date"): row["appointment_date"], t("appointment_time"): row["appointment_time"], t("reason"): row["reason"], t("status_label"): t("status_" + row["status"].lower()) if row["status"].lower() in {"pending", "approved", "rejected"} else row["status"]} for row in rows],
+                [{t("reported_animal"): f"{choice_label(row['animal_type'], ANIMAL_LABELS)} · {row['village']}" if row["animal_type"] else t("request_appointment"), t("appointment_date"): row["appointment_date"], t("appointment_time"): row["appointment_time"], t("reason"): row["reason"], t("status_label"): t("status_" + row["status"].lower()) if row["status"].lower() in {"pending", "approved", "rejected"} else row["status"], t("response_note"): row["vet_note"] or ""} for row in rows],
                 use_container_width=True,
                 hide_index=True,
             )
         else:
-            st.info(t("no_appointments"))
+            st.info(f"**{t('appointment_empty_title')}** {t('appointment_empty_message')}")
     elif module_key == "appointment_requests":
         conn = connect_db()
         rows = conn.execute(
@@ -1748,6 +1801,8 @@ def render_module_page():
         else:
             st.info(t("no_appointment_requests"))
     elif module_key == "laboratory":
+        st.markdown(f"### {t('laboratory_requirements')}")
+        st.caption(t("laboratory_requirements_body"))
         reports = load_profile_reports(role="Veterinary")
         if reports:
             report_by_id = {report["id"]: report for report in reports}
@@ -1787,7 +1842,7 @@ def render_module_page():
                     st.success(t("lab_report_saved"))
                     st.rerun()
         else:
-            st.info(t("no_reports_to_examine"))
+            st.info(t("laboratory_no_reports"))
 
         conn = connect_db()
         lab_rows = conn.execute(
@@ -1811,7 +1866,7 @@ def render_module_page():
                 hide_index=True,
             )
         else:
-            st.info(t("no_risk_data"))
+            st.info(f"{t('no_risk_data')} {t('village_risk_empty_body')}")
     elif module_key == "notifications":
         render_notifications_module(profile)
     elif module_key == "risk_management":
@@ -1840,7 +1895,8 @@ def render_module_page():
                 hide_index=True,
             )
         else:
-            st.info(t("no_risk_data"))
+            st.markdown(f"### {t('risk_action_plan_title')}")
+            st.info(f"{t('no_risk_data')} {t('risk_management_empty_body')}")
 
         st.markdown(f"### {t('notification_health_section')}")
         alerts = alert_summary()
