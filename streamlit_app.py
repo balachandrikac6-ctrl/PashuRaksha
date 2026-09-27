@@ -760,6 +760,83 @@ ANIMAL_CARE_TRANSLATIONS = {
 for language_name, translations in ANIMAL_CARE_TRANSLATIONS.items():
     TRANSLATIONS[language_name].update(translations)
 
+NOTIFICATION_TRANSLATIONS = {
+    "English": {
+        "notification_center": "Notification Center", "recent_notifications": "Recent notifications", "unread_count": "Unread", "health_alert_count": "High-risk reports", "appointment_count": "Appointment updates",
+        "mark_read": "Mark as read", "mark_all_read": "Mark all as read", "new_label": "NEW", "read_label": "Read",
+        "notification_empty_title": "You are all caught up.", "notification_empty_message": "New report confirmations, high-risk alerts, and appointment updates will appear here.",
+        "notification_health_section": "Health alerts", "notification_appointment_section": "Appointment updates",
+        "report_notification_title": "Health report received", "report_notification_message": "Your {animal} health report for {village} was saved. Risk score: {score}/100 ({level}).",
+        "risk_notification_title": "Veterinary review recommended", "risk_notification_message": "A {animal} report in {village} has an elevated risk score of {score}/100. Please contact a veterinarian.",
+        "appointment_notification_title": "Appointment request received", "appointment_notification_message": "Your appointment request for {date} at {time} has been saved.",
+        "vet_appointment_title": "New appointment request", "vet_appointment_message": "{farmer} requested an appointment for {date} at {time}. Reason: {reason}",
+        "appointment_status": "Appointment status: {status}", "notification_no_health_alerts": "No high-risk reports need attention right now.",
+        "notification_no_appointments": "No appointment updates yet.",
+    },
+    "Hindi": {
+        "notification_center": "सूचना केंद्र", "recent_notifications": "हाल की सूचनाएँ", "unread_count": "अपठित", "health_alert_count": "उच्च जोखिम रिपोर्ट", "appointment_count": "अपॉइंटमेंट अपडेट",
+        "mark_read": "पढ़ा हुआ चिह्नित करें", "mark_all_read": "सभी को पढ़ा हुआ चिह्नित करें", "new_label": "नई", "read_label": "पढ़ी गई",
+        "notification_empty_title": "अभी कोई नई सूचना नहीं है।", "notification_empty_message": "रिपोर्ट की पुष्टि, उच्च जोखिम अलर्ट और अपॉइंटमेंट अपडेट यहाँ दिखाई देंगे।",
+        "notification_health_section": "स्वास्थ्य अलर्ट", "notification_appointment_section": "अपॉइंटमेंट अपडेट",
+        "report_notification_title": "स्वास्थ्य रिपोर्ट प्राप्त हुई", "report_notification_message": "{village} के लिए {animal} की स्वास्थ्य रिपोर्ट सेव हो गई। जोखिम स्कोर: {score}/100 ({level}).",
+        "risk_notification_title": "पशु चिकित्सक की जाँच ज़रूरी", "risk_notification_message": "{village} में {animal} की रिपोर्ट का जोखिम स्कोर {score}/100 है। कृपया पशु चिकित्सक से संपर्क करें।",
+        "appointment_notification_title": "अपॉइंटमेंट अनुरोध प्राप्त हुआ", "appointment_notification_message": "{date} को {time} के लिए आपका अपॉइंटमेंट अनुरोध सेव हो गया।",
+        "vet_appointment_title": "अपॉइंटमेंट का नया अनुरोध", "vet_appointment_message": "{farmer} ने {date} को {time} के लिए अपॉइंटमेंट माँगा। कारण: {reason}",
+        "appointment_status": "अपॉइंटमेंट स्थिति: {status}", "notification_no_health_alerts": "अभी किसी उच्च जोखिम रिपोर्ट पर ध्यान देने की ज़रूरत नहीं है।",
+        "notification_no_appointments": "अभी कोई अपॉइंटमेंट अपडेट नहीं है।",
+    },
+    "Kannada": {
+        "notification_center": "ಅಧಿಸೂಚನೆ ಕೇಂದ್ರ", "recent_notifications": "ಇತ್ತೀಚಿನ ಅಧಿಸೂಚನೆಗಳು", "unread_count": "ಓದದವು", "health_alert_count": "ಹೆಚ್ಚಿನ ಅಪಾಯದ ವರದಿಗಳು", "appointment_count": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ನವೀಕರಣಗಳು",
+        "mark_read": "ಓದಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಿ", "mark_all_read": "ಎಲ್ಲವನ್ನೂ ಓದಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಿ", "new_label": "ಹೊಸದು", "read_label": "ಓದಲಾಗಿದೆ",
+        "notification_empty_title": "ಹೊಸ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ.", "notification_empty_message": "ವರದಿ ದೃಢೀಕರಣಗಳು, ಹೆಚ್ಚಿನ ಅಪಾಯದ ಎಚ್ಚರಿಕೆಗಳು ಮತ್ತು ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ನವೀಕರಣಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.",
+        "notification_health_section": "ಆರೋಗ್ಯ ಎಚ್ಚರಿಕೆಗಳು", "notification_appointment_section": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ನವೀಕರಣಗಳು",
+        "report_notification_title": "ಆರೋಗ್ಯ ವರದಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ", "report_notification_message": "{village} ಗ್ರಾಮದ {animal} ಆರೋಗ್ಯ ವರದಿ ಉಳಿಸಲಾಗಿದೆ. ಅಪಾಯ ಅಂಕ: {score}/100 ({level}).",
+        "risk_notification_title": "ಪಶುವೈದ್ಯರ ಪರಿಶೀಲನೆ ಅಗತ್ಯ", "risk_notification_message": "{village} ಗ್ರಾಮದ {animal} ವರದಿಯ ಅಪಾಯ ಅಂಕ {score}/100. ದಯವಿಟ್ಟು ಪಶುವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+        "appointment_notification_title": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ", "appointment_notification_message": "{date} ರಂದು {time}ಕ್ಕೆ ನಿಮ್ಮ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿಯನ್ನು ಉಳಿಸಲಾಗಿದೆ.",
+        "vet_appointment_title": "ಹೊಸ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿನಂತಿ", "vet_appointment_message": "{farmer} ಅವರು {date} ರಂದು {time}ಕ್ಕೆ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಕೋರಿದ್ದಾರೆ. ಕಾರಣ: {reason}",
+        "appointment_status": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಸ್ಥಿತಿ: {status}", "notification_no_health_alerts": "ಈಗ ಗಮನಿಸಬೇಕಾದ ಹೆಚ್ಚಿನ ಅಪಾಯದ ವರದಿಗಳಿಲ್ಲ.",
+        "notification_no_appointments": "ಇನ್ನೂ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ನವೀಕರಣಗಳಿಲ್ಲ.",
+    },
+    "Marathi": {
+        "notification_center": "सूचना केंद्र", "recent_notifications": "अलीकडील सूचना", "unread_count": "न वाचलेल्या", "health_alert_count": "उच्च-जोखीम अहवाल", "appointment_count": "भेटीचे अपडेट",
+        "mark_read": "वाचलेले म्हणून चिन्हांकित करा", "mark_all_read": "सर्व वाचलेले म्हणून चिन्हांकित करा", "new_label": "नवीन", "read_label": "वाचले",
+        "notification_empty_title": "नवीन सूचना नाहीत.", "notification_empty_message": "अहवाल पुष्टी, उच्च-जोखीम सूचना आणि भेटीचे अपडेट येथे दिसतील.",
+        "notification_health_section": "आरोग्य सूचना", "notification_appointment_section": "भेटीचे अपडेट",
+        "report_notification_title": "आरोग्य अहवाल प्राप्त झाला", "report_notification_message": "{village} येथील {animal} आरोग्य अहवाल जतन झाला. जोखीम गुण: {score}/100 ({level}).",
+        "risk_notification_title": "पशुवैद्यकीय तपासणी आवश्यक", "risk_notification_message": "{village} येथील {animal} अहवालाचा जोखीम गुण {score}/100 आहे. कृपया पशुवैद्याशी संपर्क साधा.",
+        "appointment_notification_title": "भेटीची विनंती प्राप्त झाली", "appointment_notification_message": "{date} रोजी {time} साठी तुमची भेट विनंती जतन झाली.",
+        "vet_appointment_title": "भेटीची नवीन विनंती", "vet_appointment_message": "{farmer} यांनी {date} रोजी {time} साठी भेट मागितली. कारण: {reason}",
+        "appointment_status": "भेटीची स्थिती: {status}", "notification_no_health_alerts": "सध्या लक्ष देण्याची गरज असलेले उच्च-जोखीम अहवाल नाहीत.",
+        "notification_no_appointments": "अद्याप भेटीचे अपडेट नाहीत.",
+    },
+    "Telugu": {
+        "notification_center": "నోటిఫికేషన్ కేంద్రం", "recent_notifications": "ఇటీవలి నోటిఫికేషన్‌లు", "unread_count": "చదవనివి", "health_alert_count": "అధిక ప్రమాద నివేదికలు", "appointment_count": "అపాయింట్‌మెంట్ అప్‌డేట్‌లు",
+        "mark_read": "చదివినట్లు గుర్తించండి", "mark_all_read": "అన్నింటినీ చదివినట్లు గుర్తించండి", "new_label": "కొత్తది", "read_label": "చదివారు",
+        "notification_empty_title": "కొత్త నోటిఫికేషన్‌లు లేవు.", "notification_empty_message": "నివేదిక నిర్ధారణలు, అధిక ప్రమాద హెచ్చరికలు, అపాయింట్‌మెంట్ అప్‌డేట్‌లు ఇక్కడ కనిపిస్తాయి.",
+        "notification_health_section": "ఆరోగ్య హెచ్చరికలు", "notification_appointment_section": "అపాయింట్‌మెంట్ అప్‌డేట్‌లు",
+        "report_notification_title": "ఆరోగ్య నివేదిక అందింది", "report_notification_message": "{village}లోని {animal} ఆరోగ్య నివేదిక సేవ్ చేయబడింది. ప్రమాద స్కోరు: {score}/100 ({level}).",
+        "risk_notification_title": "పశువైద్య పరీక్ష అవసరం", "risk_notification_message": "{village}లోని {animal} నివేదిక ప్రమాద స్కోరు {score}/100. దయచేసి పశువైద్యుడిని సంప్రదించండి.",
+        "appointment_notification_title": "అపాయింట్‌మెంట్ అభ్యర్థన అందింది", "appointment_notification_message": "{date}న {time}కు మీ అపాయింట్‌మెంట్ అభ్యర్థన సేవ్ చేయబడింది.",
+        "vet_appointment_title": "కొత్త అపాయింట్‌మెంట్ అభ్యర్థన", "vet_appointment_message": "{farmer} {date}న {time}కు అపాయింట్‌మెంట్ కోరారు. కారణం: {reason}",
+        "appointment_status": "అపాయింట్‌మెంట్ స్థితి: {status}", "notification_no_health_alerts": "ప్రస్తుతం శ్రద్ధ అవసరమైన అధిక ప్రమాద నివేదికలు లేవు.",
+        "notification_no_appointments": "ఇంకా అపాయింట్‌మెంట్ అప్‌డేట్‌లు లేవు.",
+    },
+    "Tamil": {
+        "notification_center": "அறிவிப்பு மையம்", "recent_notifications": "சமீபத்திய அறிவிப்புகள்", "unread_count": "படிக்காதவை", "health_alert_count": "உயர் ஆபத்து அறிக்கைகள்", "appointment_count": "சந்திப்பு புதுப்பிப்புகள்",
+        "mark_read": "படித்ததாகக் குறிக்கவும்", "mark_all_read": "அனைத்தையும் படித்ததாகக் குறிக்கவும்", "new_label": "புதியது", "read_label": "படிக்கப்பட்டது",
+        "notification_empty_title": "புதிய அறிவிப்புகள் இல்லை.", "notification_empty_message": "அறிக்கை உறுதிப்படுத்தல்கள், உயர் ஆபத்து எச்சரிக்கைகள் மற்றும் சந்திப்பு புதுப்பிப்புகள் இங்கே தோன்றும்.",
+        "notification_health_section": "ஆரோக்கிய எச்சரிக்கைகள்", "notification_appointment_section": "சந்திப்பு புதுப்பிப்புகள்",
+        "report_notification_title": "ஆரோக்கிய அறிக்கை பெறப்பட்டது", "report_notification_message": "{village} பகுதியின் {animal} ஆரோக்கிய அறிக்கை சேமிக்கப்பட்டது. ஆபத்து மதிப்பெண்: {score}/100 ({level}).",
+        "risk_notification_title": "கால்நடை மருத்துவர் பரிசோதனை தேவை", "risk_notification_message": "{village} பகுதியின் {animal} அறிக்கையின் ஆபத்து மதிப்பெண் {score}/100. கால்நடை மருத்துவரை அணுகவும்.",
+        "appointment_notification_title": "சந்திப்பு கோரிக்கை பெறப்பட்டது", "appointment_notification_message": "{date} அன்று {time}க்கான உங்கள் சந்திப்பு கோரிக்கை சேமிக்கப்பட்டது.",
+        "vet_appointment_title": "புதிய சந்திப்பு கோரிக்கை", "vet_appointment_message": "{farmer} {date} அன்று {time}க்கு சந்திப்பு கோரியுள்ளார். காரணம்: {reason}",
+        "appointment_status": "சந்திப்பு நிலை: {status}", "notification_no_health_alerts": "இப்போது கவனம் தேவைப்படும் உயர் ஆபத்து அறிக்கைகள் இல்லை.",
+        "notification_no_appointments": "சந்திப்பு புதுப்பிப்புகள் எதுவும் இல்லை.",
+    },
+}
+for language_name, translations in NOTIFICATION_TRANSLATIONS.items():
+    TRANSLATIONS[language_name].update(translations)
+
 CUSTOM_CSS = """
 <style>
     #MainMenu, header, footer { display: none !important; }
@@ -811,6 +888,10 @@ CUSTOM_CSS = """
 def t(key):
     language = st.session_state.get("language", "English")
     return TRANSLATIONS.get(language, TRANSLATIONS["English"]).get(key, key)
+
+
+def translate_for(language, key):
+    return TRANSLATIONS.get(language, TRANSLATIONS["English"]).get(key, TRANSLATIONS["English"].get(key, key))
 
 
 ANIMAL_LABELS = {
@@ -871,7 +952,20 @@ def localized_risk_level(value):
         "Medium": "medium_risk",
         "Low": "low_risk",
     }
-    return t(keys[value]) if value in keys else value
+    return localized_risk_level_for(st.session_state.get("language", "English"), value, keys)
+
+
+def localized_risk_level_for(language, value, keys=None):
+    keys = keys or {
+        "Critical": "risk_critical",
+        "High Concern": "risk_high_concern",
+        "Moderate Concern": "risk_moderate_concern",
+        "Mild Concern": "risk_mild_concern",
+        "High": "high_risk",
+        "Medium": "medium_risk",
+        "Low": "low_risk",
+    }
+    return translate_for(language, keys[value]) if value in keys else value
 
 
 def localized_care_advice(symptoms, level):
@@ -994,6 +1088,34 @@ def create_report_entry(profile_id, selected_animals, symptoms, village, days_si
             now,
         ),
     )
+    notification_title = t("risk_notification_title") if int(score) >= 55 else t("report_notification_title")
+    notification_key = "risk_notification_message" if int(score) >= 55 else "report_notification_message"
+    notification_message = t(notification_key).format(
+        animal=animal_type,
+        village=village.strip(),
+        score=int(score),
+        level=localized_risk_level(risk_level),
+    )
+    conn.execute(
+        "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'health', 0, ?)",
+        (profile_id, notification_title, notification_message, now),
+    )
+    if int(score) >= 55:
+        recipients = conn.execute(
+            "SELECT id, language FROM profiles WHERE role IN ('Veterinary', 'Government')"
+        ).fetchall()
+        for recipient in recipients:
+            recipient_language = recipient["language"] or "English"
+            recipient_message = translate_for(recipient_language, "risk_notification_message").format(
+                animal=animal_type,
+                village=village.strip(),
+                score=int(score),
+                level=localized_risk_level_for(recipient_language, risk_level),
+            )
+            conn.execute(
+                "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'health', 0, ?)",
+                (recipient["id"], translate_for(recipient_language, "risk_notification_title"), recipient_message, now),
+            )
     report_id = cursor.lastrowid
     row = conn.execute("SELECT * FROM animal_reports WHERE id = ?", (report_id,)).fetchone()
     conn.commit()
@@ -1050,6 +1172,107 @@ def alert_summary():
                 "risk_score": score,
             })
     return alerts
+
+
+def load_profile_notifications(profile_id):
+    conn = connect_db()
+    rows = conn.execute(
+        "SELECT * FROM notifications WHERE profile_id = ? ORDER BY id DESC",
+        (profile_id,),
+    ).fetchall()
+    conn.close()
+    return [dict(row) for row in rows]
+
+
+def load_notification_appointments(profile):
+    conn = connect_db()
+    if profile["role"] == "Farmer":
+        rows = conn.execute(
+            "SELECT * FROM appointments WHERE farmer_profile_id = ? ORDER BY id DESC LIMIT 10",
+            (profile["id"],),
+        ).fetchall()
+    elif profile["role"] == "Veterinary":
+        rows = conn.execute(
+            "SELECT * FROM appointments WHERE status = 'Pending' ORDER BY id DESC LIMIT 10"
+        ).fetchall()
+    else:
+        rows = []
+    conn.close()
+    return [dict(row) for row in rows]
+
+
+def mark_profile_notification_read(profile_id, notification_id=None):
+    conn = connect_db()
+    if notification_id is None:
+        conn.execute(
+            "UPDATE notifications SET is_read = 1 WHERE profile_id = ?",
+            (profile_id,),
+        )
+    else:
+        conn.execute(
+            "UPDATE notifications SET is_read = 1 WHERE profile_id = ? AND id = ?",
+            (profile_id, notification_id),
+        )
+    conn.commit()
+    conn.close()
+
+
+def render_notifications_module(profile):
+    notifications = load_profile_notifications(profile["id"])
+    reports = load_profile_reports(
+        profile_id=profile["id"] if profile["role"] == "Farmer" else None,
+        role=profile["role"],
+    )
+    health_alerts = [item for item in reports if int(item.get("risk_score") or 0) >= 55]
+    appointments = load_notification_appointments(profile)
+    unread_count = sum(1 for item in notifications if not item.get("is_read"))
+
+    st.markdown(f"<h2>{t('notification_center')}</h2>", unsafe_allow_html=True)
+    metric_columns = st.columns(3)
+    metric_columns[0].metric(t("unread_count"), unread_count)
+    metric_columns[1].metric(t("health_alert_count"), len(health_alerts))
+    metric_columns[2].metric(t("appointment_count"), len(appointments))
+
+    if unread_count and st.button(t("mark_all_read"), key="mark_all_notifications_read"):
+        mark_profile_notification_read(profile["id"])
+        st.rerun()
+
+    if notifications:
+        st.markdown(f"### {t('recent_notifications')}")
+        for item in notifications:
+            with st.container(border=True):
+                status_label = t("new_label") if not item.get("is_read") else t("read_label")
+                st.markdown(f"**{item.get('title', '')}** · {status_label}")
+                st.write(item.get("message", ""))
+                st.caption(item.get("created_at", ""))
+                if not item.get("is_read") and st.button(t("mark_read"), key=f"mark_notification_{item['id']}"):
+                    mark_profile_notification_read(profile["id"], item["id"])
+                    st.rerun()
+
+    st.markdown(f"### {t('notification_health_section')}")
+    if health_alerts:
+        for report in health_alerts:
+            with st.container(border=True):
+                st.markdown(f"**{localized_risk_level(report.get('risk_level', ''))}** · {choice_label(report.get('animal_type', ''), ANIMAL_LABELS)}")
+                st.write(f"{t('village')}: {report.get('village', '')} · {t('risk_score')}: {report.get('risk_score', 0)}/100")
+                st.caption(t("care_vet"))
+    else:
+        st.info(t("notification_no_health_alerts"))
+
+    st.markdown(f"### {t('notification_appointment_section')}")
+    if appointments:
+        for appointment in appointments:
+            status = appointment.get("status", "Pending").lower()
+            status_text = t("status_" + status) if status in {"pending", "approved", "rejected"} else appointment.get("status", "")
+            with st.container(border=True):
+                st.markdown(f"**{t('appointment_status').format(status=status_text)}**")
+                st.write(f"{appointment.get('appointment_date', '')} · {appointment.get('appointment_time', '')}")
+                st.write(appointment.get("reason", ""))
+    else:
+        st.info(t("notification_no_appointments"))
+
+    if not notifications and not health_alerts and not appointments:
+        st.info(f"**{t('notification_empty_title')}** {t('notification_empty_message')}")
 
 
 def get_dashboard_data():
@@ -1341,10 +1564,34 @@ def render_module_page():
                 st.error(t("enter_reason"))
             else:
                 conn = connect_db()
+                created_at = datetime.now().isoformat(timespec="seconds")
                 conn.execute(
                     "INSERT INTO appointments (farmer_profile_id, appointment_date, appointment_time, reason, status, is_demo, created_at) VALUES (?, ?, ?, ?, 'Pending', 0, ?)",
-                    (profile["id"], appointment_date.isoformat(), appointment_time.strftime("%H:%M"), reason.strip(), datetime.now().isoformat(timespec="seconds")),
+                    (profile["id"], appointment_date.isoformat(), appointment_time.strftime("%H:%M"), reason.strip(), created_at),
                 )
+                appointment_message = t("appointment_notification_message").format(
+                    date=appointment_date.isoformat(),
+                    time=appointment_time.strftime("%H:%M"),
+                )
+                conn.execute(
+                    "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'appointment', 0, ?)",
+                    (profile["id"], t("appointment_notification_title"), appointment_message, created_at),
+                )
+                veterinarian_profiles = conn.execute(
+                    "SELECT id, language FROM profiles WHERE role = 'Veterinary'"
+                ).fetchall()
+                for veterinarian in veterinarian_profiles:
+                    veterinarian_language = veterinarian["language"] or "English"
+                    veterinarian_message = translate_for(veterinarian_language, "vet_appointment_message").format(
+                        farmer=profile.get("full_name", t("farmer")),
+                        date=appointment_date.isoformat(),
+                        time=appointment_time.strftime("%H:%M"),
+                        reason=reason.strip(),
+                    )
+                    conn.execute(
+                        "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'appointment', 0, ?)",
+                        (veterinarian["id"], translate_for(veterinarian_language, "vet_appointment_title"), veterinarian_message, created_at),
+                    )
                 conn.commit()
                 conn.close()
                 st.success(t("appointment_success"))
@@ -1394,7 +1641,9 @@ def render_module_page():
             )
         else:
             st.info(t("no_reports"))
-    elif module_key in {"notifications", "risk_management"}:
+    elif module_key == "notifications":
+        render_notifications_module(profile)
+    elif module_key == "risk_management":
         alerts = alert_summary()
         if alerts:
             st.dataframe(
