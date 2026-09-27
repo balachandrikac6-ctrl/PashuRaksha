@@ -837,6 +837,65 @@ NOTIFICATION_TRANSLATIONS = {
 for language_name, translations in NOTIFICATION_TRANSLATIONS.items():
     TRANSLATIONS[language_name].update(translations)
 
+PORTAL_ACTION_TRANSLATIONS = {
+    "English": {
+        "farmer_label": "Farmer", "approve_appointment": "Approve", "reject_appointment": "Reject", "decision_saved": "Appointment decision saved.",
+        "appointment_approved_title": "Appointment approved", "appointment_approved_message": "Your appointment request for {date} at {time} was approved. {note}",
+        "appointment_rejected_title": "Appointment not approved", "appointment_rejected_message": "Your appointment request for {date} at {time} was not approved. {note}",
+        "lab_notification_title": "Veterinary report updated", "lab_notification_message": "A veterinarian added an examination result for your animal report #{report_id}.",
+        "save_lab_report": "Save veterinary report", "lab_report_saved": "Veterinary report saved.", "select_report": "Select an animal report", "no_reports_to_examine": "No animal reports are available for examination.",
+        "follow_up_date": "Follow-up date", "suggested_action": "Suggested action", "village_risk_summary": "Village risk overview", "no_risk_data": "No village risk data yet.",
+        "gov_action_critical": "Urgent veterinary assessment and coordinated animal-health response.", "gov_action_high": "Prioritize a veterinary visit and monitor affected animals closely.", "gov_action_medium": "Continue village monitoring and encourage preventive care.", "gov_action_low": "Maintain routine monitoring and preventive care.",
+    },
+    "Hindi": {
+        "farmer_label": "किसान", "approve_appointment": "स्वीकृत करें", "reject_appointment": "अस्वीकृत करें", "decision_saved": "अपॉइंटमेंट का निर्णय सेव किया गया।",
+        "appointment_approved_title": "अपॉइंटमेंट स्वीकृत", "appointment_approved_message": "{date} को {time} का आपका अपॉइंटमेंट स्वीकृत हुआ। {note}",
+        "appointment_rejected_title": "अपॉइंटमेंट स्वीकृत नहीं", "appointment_rejected_message": "{date} को {time} का आपका अपॉइंटमेंट स्वीकृत नहीं हुआ। {note}",
+        "lab_notification_title": "पशु चिकित्सा रिपोर्ट अपडेट हुई", "lab_notification_message": "पशु चिकित्सक ने आपकी पशु रिपोर्ट #{report_id} के लिए जाँच का परिणाम जोड़ा है।",
+        "save_lab_report": "पशु चिकित्सा रिपोर्ट सेव करें", "lab_report_saved": "पशु चिकित्सा रिपोर्ट सेव हुई।", "select_report": "पशु रिपोर्ट चुनें", "no_reports_to_examine": "जाँच के लिए कोई पशु रिपोर्ट उपलब्ध नहीं है।",
+        "follow_up_date": "फॉलो-अप की तारीख", "suggested_action": "सुझाई गई कार्रवाई", "village_risk_summary": "गाँव जोखिम सारांश", "no_risk_data": "अभी गाँव का जोखिम डेटा उपलब्ध नहीं है।",
+        "gov_action_critical": "तत्काल पशु चिकित्सा जाँच और समन्वित पशु-स्वास्थ्य कार्रवाई करें।", "gov_action_high": "पशु चिकित्सा दौरे को प्राथमिकता दें और प्रभावित पशुओं पर नज़र रखें।", "gov_action_medium": "गाँव की निगरानी जारी रखें और बचाव की सलाह दें।", "gov_action_low": "नियमित निगरानी और बचाव के उपाय जारी रखें।",
+    },
+    "Kannada": {
+        "farmer_label": "ರೈತ", "approve_appointment": "ಅನುಮೋದಿಸಿ", "reject_appointment": "ತಿರಸ್ಕರಿಸಿ", "decision_saved": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ನಿರ್ಧಾರವನ್ನು ಉಳಿಸಲಾಗಿದೆ.",
+        "appointment_approved_title": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಅನುಮೋದಿಸಲಾಗಿದೆ", "appointment_approved_message": "{date} ರಂದು {time}ಕ್ಕೆ ನಿಮ್ಮ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಅನುಮೋದಿಸಲಾಗಿದೆ. {note}",
+        "appointment_rejected_title": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಅನುಮೋದಿಸಲಾಗಿಲ್ಲ", "appointment_rejected_message": "{date} ರಂದು {time}ಕ್ಕೆ ನಿಮ್ಮ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಅನುಮೋದಿಸಲಾಗಿಲ್ಲ. {note}",
+        "lab_notification_title": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ನವೀಕರಿಸಲಾಗಿದೆ", "lab_notification_message": "ಪಶುವೈದ್ಯರು ನಿಮ್ಮ ಪಶು ವರದಿ #{report_id}ಗೆ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶವನ್ನು ಸೇರಿಸಿದ್ದಾರೆ.",
+        "save_lab_report": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ಉಳಿಸಿ", "lab_report_saved": "ಪಶುವೈದ್ಯಕೀಯ ವರದಿ ಉಳಿಸಲಾಗಿದೆ.", "select_report": "ಪಶು ವರದಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ", "no_reports_to_examine": "ಪರೀಕ್ಷೆಗೆ ಯಾವುದೇ ಪಶು ವರದಿಗಳಿಲ್ಲ.",
+        "follow_up_date": "ಮರುಪರಿಶೀಲನೆ ದಿನಾಂಕ", "suggested_action": "ಸೂಚಿಸಿದ ಕ್ರಮ", "village_risk_summary": "ಗ್ರಾಮದ ಅಪಾಯ ಸಾರಾಂಶ", "no_risk_data": "ಇನ್ನೂ ಗ್ರಾಮದ ಅಪಾಯದ ಮಾಹಿತಿ ಇಲ್ಲ.",
+        "gov_action_critical": "ತಕ್ಷಣ ಪಶುವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆ ಮತ್ತು ಸಮನ್ವಯಿತ ಪಶು ಆರೋಗ್ಯ ಕ್ರಮ ಕೈಗೊಳ್ಳಿ.", "gov_action_high": "ಪಶುವೈದ್ಯರ ಭೇಟಿಗೆ ಆದ್ಯತೆ ನೀಡಿ ಮತ್ತು ಬಾಧಿತ ಪಶುಗಳನ್ನು ಗಮನಿಸಿ.", "gov_action_medium": "ಗ್ರಾಮ ಮೇಲ್ವಿಚಾರಣೆ ಮುಂದುವರಿಸಿ ಮತ್ತು ತಡೆಗಟ್ಟುವ ಆರೈಕೆಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ.", "gov_action_low": "ನಿಯಮಿತ ಮೇಲ್ವಿಚಾರಣೆ ಮತ್ತು ತಡೆಗಟ್ಟುವ ಆರೈಕೆ ಮುಂದುವರಿಸಿ.",
+    },
+    "Marathi": {
+        "farmer_label": "शेतकरी", "approve_appointment": "मंजूर करा", "reject_appointment": "नाकारा", "decision_saved": "भेटीचा निर्णय जतन केला.",
+        "appointment_approved_title": "भेट मंजूर झाली", "appointment_approved_message": "{date} रोजी {time} ची तुमची भेट मंजूर झाली. {note}",
+        "appointment_rejected_title": "भेट मंजूर झाली नाही", "appointment_rejected_message": "{date} रोजी {time} ची तुमची भेट मंजूर झाली नाही. {note}",
+        "lab_notification_title": "पशुवैद्यकीय अहवाल अद्ययावत", "lab_notification_message": "पशुवैद्यांनी तुमच्या पशु अहवाल #{report_id} साठी तपासणीचा निकाल जोडला आहे.",
+        "save_lab_report": "पशुवैद्यकीय अहवाल जतन करा", "lab_report_saved": "पशुवैद्यकीय अहवाल जतन झाला.", "select_report": "पशु अहवाल निवडा", "no_reports_to_examine": "तपासणीसाठी पशु अहवाल उपलब्ध नाहीत.",
+        "follow_up_date": "पुढील तपासणीची तारीख", "suggested_action": "सुचवलेली कृती", "village_risk_summary": "गावाच्या जोखमीचा आढावा", "no_risk_data": "गावाच्या जोखमीची माहिती अद्याप उपलब्ध नाही.",
+        "gov_action_critical": "तातडीची पशुवैद्यकीय तपासणी आणि समन्वित पशु-आरोग्य प्रतिसाद द्या.", "gov_action_high": "पशुवैद्यकीय भेटीस प्राधान्य द्या आणि बाधित पशूंवर लक्ष ठेवा.", "gov_action_medium": "गावाचे निरीक्षण सुरू ठेवा आणि प्रतिबंधात्मक काळजीला प्रोत्साहन द्या.", "gov_action_low": "नियमित निरीक्षण आणि प्रतिबंधात्मक काळजी सुरू ठेवा.",
+    },
+    "Telugu": {
+        "farmer_label": "రైతు", "approve_appointment": "ఆమోదించండి", "reject_appointment": "తిరస్కరించండి", "decision_saved": "అపాయింట్‌మెంట్ నిర్ణయం సేవ్ చేయబడింది.",
+        "appointment_approved_title": "అపాయింట్‌మెంట్ ఆమోదించబడింది", "appointment_approved_message": "{date}న {time}కు మీ అపాయింట్‌మెంట్ ఆమోదించబడింది. {note}",
+        "appointment_rejected_title": "అపాయింట్‌మెంట్ ఆమోదించబడలేదు", "appointment_rejected_message": "{date}న {time}కు మీ అపాయింట్‌మెంట్ ఆమోదించబడలేదు. {note}",
+        "lab_notification_title": "పశువైద్య నివేదిక నవీకరించబడింది", "lab_notification_message": "పశువైద్యుడు మీ పశు నివేదిక #{report_id}కు పరీక్ష ఫలితాన్ని జోడించారు.",
+        "save_lab_report": "పశువైద్య నివేదికను సేవ్ చేయండి", "lab_report_saved": "పశువైద్య నివేదిక సేవ్ చేయబడింది.", "select_report": "పశు నివేదికను ఎంచుకోండి", "no_reports_to_examine": "పరీక్షించడానికి పశు నివేదికలు లేవు.",
+        "follow_up_date": "తదుపరి పరీక్ష తేదీ", "suggested_action": "సూచించిన చర్య", "village_risk_summary": "గ్రామ ప్రమాద సమీక్ష", "no_risk_data": "ఇంకా గ్రామ ప్రమాద సమాచారం లేదు.",
+        "gov_action_critical": "తక్షణ పశువైద్య పరీక్ష మరియు సమన్వయిత పశు ఆరోగ్య చర్య చేపట్టండి.", "gov_action_high": "పశువైద్య సందర్శనకు ప్రాధాన్యత ఇచ్చి ప్రభావిత జంతువులను గమనించండి.", "gov_action_medium": "గ్రామ పర్యవేక్షణ కొనసాగించి నివారణ సంరక్షణను ప్రోత్సహించండి.", "gov_action_low": "సాధారణ పర్యవేక్షణ మరియు నివారణ సంరక్షణ కొనసాగించండి.",
+    },
+    "Tamil": {
+        "farmer_label": "விவசாயி", "approve_appointment": "அங்கீகரிக்கவும்", "reject_appointment": "நிராகரிக்கவும்", "decision_saved": "சந்திப்பு முடிவு சேமிக்கப்பட்டது.",
+        "appointment_approved_title": "சந்திப்பு அங்கீகரிக்கப்பட்டது", "appointment_approved_message": "{date} அன்று {time}க்கான உங்கள் சந்திப்பு அங்கீகரிக்கப்பட்டது. {note}",
+        "appointment_rejected_title": "சந்திப்பு அங்கீகரிக்கப்படவில்லை", "appointment_rejected_message": "{date} அன்று {time}க்கான உங்கள் சந்திப்பு அங்கீகரிக்கப்படவில்லை. {note}",
+        "lab_notification_title": "கால்நடை மருத்துவ அறிக்கை புதுப்பிக்கப்பட்டது", "lab_notification_message": "உங்கள் கால்நடை அறிக்கை #{report_id}க்கான பரிசோதனை முடிவை மருத்துவர் சேர்த்துள்ளார்.",
+        "save_lab_report": "கால்நடை மருத்துவ அறிக்கையைச் சேமிக்கவும்", "lab_report_saved": "கால்நடை மருத்துவ அறிக்கை சேமிக்கப்பட்டது.", "select_report": "கால்நடை அறிக்கையைத் தேர்ந்தெடுக்கவும்", "no_reports_to_examine": "பரிசோதனைக்கு கால்நடை அறிக்கைகள் இல்லை.",
+        "follow_up_date": "மீண்டும் பரிசோதனை தேதி", "suggested_action": "பரிந்துரைக்கப்பட்ட நடவடிக்கை", "village_risk_summary": "கிராம ஆபத்து சுருக்கம்", "no_risk_data": "கிராம ஆபத்து தகவல் இன்னும் இல்லை.",
+        "gov_action_critical": "உடனடி கால்நடை பரிசோதனை மற்றும் ஒருங்கிணைந்த விலங்கு சுகாதார நடவடிக்கை மேற்கொள்ளவும்.", "gov_action_high": "கால்நடை மருத்துவர் வருகைக்கு முன்னுரிமை அளித்து பாதிக்கப்பட்ட விலங்குகளை கண்காணிக்கவும்.", "gov_action_medium": "கிராம கண்காணிப்பைத் தொடர்ந்து தடுப்பு பராமரிப்பை ஊக்குவிக்கவும்.", "gov_action_low": "வழக்கமான கண்காணிப்பு மற்றும் தடுப்பு பராமரிப்பைத் தொடரவும்.",
+    },
+}
+for language_name, translations in PORTAL_ACTION_TRANSLATIONS.items():
+    TRANSLATIONS[language_name].update(translations)
+
 CUSTOM_CSS = """
 <style>
     #MainMenu, header, footer { display: none !important; }
@@ -1215,6 +1274,48 @@ def mark_profile_notification_read(profile_id, notification_id=None):
         )
     conn.commit()
     conn.close()
+
+
+def save_appointment_decision(veterinarian, appointment_id, status, vet_note):
+    if veterinarian.get("role") != "Veterinary" or status not in {"Approved", "Rejected"}:
+        return False
+
+    conn = connect_db()
+    appointment = conn.execute(
+        "SELECT * FROM appointments WHERE id = ? AND status = 'Pending'",
+        (appointment_id,),
+    ).fetchone()
+    if not appointment:
+        conn.close()
+        return False
+
+    conn.execute(
+        "UPDATE appointments SET vet_profile_id = ?, status = ?, vet_note = ? WHERE id = ?",
+        (veterinarian["id"], status, vet_note.strip(), appointment_id),
+    )
+    farmer = conn.execute(
+        "SELECT language FROM profiles WHERE id = ?",
+        (appointment["farmer_profile_id"],),
+    ).fetchone()
+    farmer_language = farmer["language"] if farmer and farmer["language"] else "English"
+    notification_key = "appointment_approved" if status == "Approved" else "appointment_rejected"
+    notification_message = translate_for(farmer_language, notification_key + "_message").format(
+        date=appointment["appointment_date"],
+        time=appointment["appointment_time"],
+        note=vet_note.strip(),
+    ).strip()
+    conn.execute(
+        "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'appointment', 0, ?)",
+        (
+            appointment["farmer_profile_id"],
+            translate_for(farmer_language, notification_key + "_title"),
+            notification_message,
+            datetime.now().isoformat(timespec="seconds"),
+        ),
+    )
+    conn.commit()
+    conn.close()
+    return True
 
 
 def render_notifications_module(profile):
@@ -1608,28 +1709,98 @@ def render_module_page():
             st.info(t("no_appointments"))
     elif module_key == "appointment_requests":
         conn = connect_db()
-        rows = conn.execute("SELECT * FROM appointments ORDER BY id DESC").fetchall()
+        rows = conn.execute(
+            """
+            SELECT a.*, p.full_name AS farmer_name, r.animal_type, r.village
+            FROM appointments AS a
+            LEFT JOIN profiles AS p ON p.id = a.farmer_profile_id
+            LEFT JOIN animal_reports AS r ON r.id = a.report_id
+            ORDER BY CASE WHEN a.status = 'Pending' THEN 0 ELSE 1 END, a.id DESC
+            """
+        ).fetchall()
         conn.close()
         if rows:
-            st.dataframe(
-                [{t("appointment_date"): row["appointment_date"], t("appointment_time"): row["appointment_time"], t("reason"): row["reason"], t("status_label"): t("status_" + row["status"].lower()) if row["status"].lower() in {"pending", "approved", "rejected"} else row["status"]} for row in rows],
-                use_container_width=True,
-                hide_index=True,
-            )
+            for row in rows:
+                with st.container(border=True):
+                    animal = choice_label(row["animal_type"], ANIMAL_LABELS) if row["animal_type"] else t("request_appointment")
+                    status = row["status"].lower()
+                    status_text = t("status_" + status) if status in {"pending", "approved", "rejected"} else row["status"]
+                    st.markdown(f"### {animal} · #{row['id']}")
+                    st.write(f"**{t('farmer_label')}:** {row['farmer_name'] or t('farmer')}")
+                    if row["village"]:
+                        st.write(f"**{t('village')}:** {row['village']}")
+                    st.write(f"**{t('appointment_date')}:** {row['appointment_date']} · {row['appointment_time']}")
+                    st.write(f"**{t('reason')}:** {row['reason']}")
+                    st.write(f"**{t('status_label')}:** {status_text}")
+                    if status == "pending":
+                        vet_note = st.text_area(t("response_note"), key=f"vet_appointment_note_{row['id']}")
+                        decision_columns = st.columns(2)
+                        if decision_columns[0].button(t("approve_appointment"), key=f"approve_appointment_{row['id']}", type="primary", use_container_width=True):
+                            note = vet_note.strip() or t("care_vet")
+                            if save_appointment_decision(profile, row["id"], "Approved", note):
+                                st.success(t("decision_saved"))
+                                st.rerun()
+                        if decision_columns[1].button(t("reject_appointment"), key=f"reject_appointment_{row['id']}", use_container_width=True):
+                            note = vet_note.strip() or t("appointment_rejected_title")
+                            if save_appointment_decision(profile, row["id"], "Rejected", note):
+                                st.success(t("decision_saved"))
+                                st.rerun()
         else:
             st.info(t("no_appointment_requests"))
     elif module_key == "laboratory":
+        reports = load_profile_reports(role="Veterinary")
+        if reports:
+            report_by_id = {report["id"]: report for report in reports}
+            with st.form("veterinary_lab_form"):
+                report_id = st.selectbox(
+                    t("select_report"),
+                    options=[None, *report_by_id],
+                    format_func=lambda item: t("select_report") if item is None else f"#{item} · {choice_label(report_by_id[item]['animal_type'], ANIMAL_LABELS)} · {report_by_id[item]['village']}",
+                )
+                lab_result = st.text_area(t("lab_result"))
+                medicine = st.text_area(t("medicine"))
+                follow_up = st.checkbox(t("follow_up"))
+                follow_up_date = st.date_input(t("follow_up_date")) if follow_up else None
+                notes = st.text_area(t("notes"))
+                submitted = st.form_submit_button(t("save_lab_report"), type="primary")
+
+            if submitted:
+                if report_id is None or not lab_result.strip():
+                    st.error(f"{t('select_report')} · {t('lab_result')}")
+                else:
+                    report = report_by_id[report_id]
+                    created_at = datetime.now().isoformat(timespec="seconds")
+                    conn = connect_db()
+                    conn.execute(
+                        "INSERT INTO lab_reports (report_id, vet_profile_id, result, medicine, follow_up_required, follow_up_date, notes, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                        (report_id, profile["id"], lab_result.strip(), medicine.strip(), int(follow_up), follow_up_date.isoformat() if follow_up_date else "", notes.strip(), created_at),
+                    )
+                    conn.execute("UPDATE animal_reports SET status = 'Lab Updated' WHERE id = ?", (report_id,))
+                    farmer = conn.execute("SELECT language FROM profiles WHERE id = ?", (report["profile_id"],)).fetchone()
+                    farmer_language = farmer["language"] if farmer and farmer["language"] else "English"
+                    conn.execute(
+                        "INSERT INTO notifications (profile_id, title, message, notification_type, is_read, created_at) VALUES (?, ?, ?, 'laboratory', 0, ?)",
+                        (report["profile_id"], translate_for(farmer_language, "lab_notification_title"), translate_for(farmer_language, "lab_notification_message").format(report_id=report_id), created_at),
+                    )
+                    conn.commit()
+                    conn.close()
+                    st.success(t("lab_report_saved"))
+                    st.rerun()
+        else:
+            st.info(t("no_reports_to_examine"))
+
         conn = connect_db()
-        rows = conn.execute("SELECT * FROM lab_reports ORDER BY id DESC").fetchall()
+        lab_rows = conn.execute(
+            "SELECT l.*, r.animal_type, r.village FROM lab_reports AS l LEFT JOIN animal_reports AS r ON r.id = l.report_id ORDER BY l.id DESC"
+        ).fetchall()
         conn.close()
-        if rows:
+        if lab_rows:
+            st.markdown(f"### {t('laboratory_module')}")
             st.dataframe(
-                [{t("reported_animal"): row["report_id"], t("lab_result"): row["result"], t("medicine"): row["medicine"], t("follow_up"): t("yes") if row["follow_up_required"] else t("no"), t("notes"): row["notes"]} for row in rows],
+                [{t("reported_animal"): f"#{row['report_id']} · {choice_label(row['animal_type'] or '', ANIMAL_LABELS)} · {row['village'] or ''}", t("lab_result"): row["result"], t("medicine"): row["medicine"], t("follow_up"): t("yes") if row["follow_up_required"] else t("no"), t("notes"): row["notes"]} for row in lab_rows],
                 use_container_width=True,
                 hide_index=True,
             )
-        else:
-            st.info(t("no_laboratory_records"))
     elif module_key == "village_risk":
         summary = get_village_summary()
         if summary:
@@ -1640,10 +1811,38 @@ def render_module_page():
                 hide_index=True,
             )
         else:
-            st.info(t("no_reports"))
+            st.info(t("no_risk_data"))
     elif module_key == "notifications":
         render_notifications_module(profile)
     elif module_key == "risk_management":
+        summary = get_village_summary()
+        risk_counts = {
+            "Critical": sum(1 for item in summary if item["risk_level"] == "Critical"),
+            "High": sum(1 for item in summary if item["risk_level"] == "High"),
+            "Medium": sum(1 for item in summary if item["risk_level"] == "Medium"),
+            "Low": sum(1 for item in summary if item["risk_level"] == "Low"),
+        }
+        metric_columns = st.columns(4)
+        for column, level in zip(metric_columns, ("Critical", "High", "Medium", "Low")):
+            column.metric(localized_risk_level(level), risk_counts[level])
+
+        st.markdown(f"### {t('village_risk_summary')}")
+        if summary:
+            action_keys = {
+                "Critical": "gov_action_critical",
+                "High": "gov_action_high",
+                "Medium": "gov_action_medium",
+                "Low": "gov_action_low",
+            }
+            st.dataframe(
+                [{t("village"): item["village"], t("total_reports"): item["total_reports"], t("risk_score"): item["risk_score"], t("risk_level"): localized_risk_level(item["risk_level"]), t("suggested_action"): t(action_keys[item["risk_level"]])} for item in summary],
+                use_container_width=True,
+                hide_index=True,
+            )
+        else:
+            st.info(t("no_risk_data"))
+
+        st.markdown(f"### {t('notification_health_section')}")
         alerts = alert_summary()
         if alerts:
             st.dataframe(
@@ -1652,7 +1851,7 @@ def render_module_page():
                 hide_index=True,
             )
         else:
-            st.info(t("no_alerts"))
+            st.info(t("notification_no_health_alerts"))
     elif module_key == "care":
         st.markdown(f"<h2>{t('care_guide_title')}</h2>", unsafe_allow_html=True)
         animal = st.selectbox(
